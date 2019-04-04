@@ -134,7 +134,7 @@ public class j1 extends JFrame implements ActionListener {
                 cab[1] = MEDIUM;
                 cab[2] = DIFFICULT;
 
-                Object selectedCab = JOptionPane.showInputDialog(null, "ELIHE NIVEL", "DIFFICULTY", JOptionPane.QUESTION_MESSAGE, null, cab, NORMAL);
+                Object selectedCab = JOptionPane.showInputDialog(null, "ELIGE NIVEL", "DIFFICULTY", JOptionPane.QUESTION_MESSAGE, null, cab, NORMAL);
                 if (selectedCab.equals(NORMAL)) {
                     DELAY = 300;
 
