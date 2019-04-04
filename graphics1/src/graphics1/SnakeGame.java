@@ -43,7 +43,7 @@ public class SnakeGame extends JPanel implements ActionListener {
     private final Color APPLE_COLOR = Color.red;
 
     // Defines the total number of possible snake tiles on the board
-    // Each tile is 10x10 and the board is 300x300, so that makes for 900
+    // Each tile is 10x10 and the board is 800x800, so that makes for 1600
     // possible tiles
     private final int TILE_COUNT = (WIDTH * HEIGHT) / (TILE_WIDTH * TILE_HEIGHT);
 
