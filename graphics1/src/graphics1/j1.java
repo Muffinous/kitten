@@ -112,7 +112,7 @@ public class j1 extends JFrame implements ActionListener {
         //when we will click on start this panel will appear
         b11 = new SnakeGame();
         //boton 1 start
-        b3 = new JButton("Difficulty");
+        b3 = new JButton("DIFFICULTY");
         b3.setFocusable(false);
         b3.setFont(new Font("cooper black", 0, 40));
         b3.setForeground(Color.GREEN);
@@ -156,7 +156,7 @@ public class j1 extends JFrame implements ActionListener {
 
     private void boton3() {
         name2 = new JPanel();
-        b2 = new JButton("Exit");
+        b2 = new JButton("EXIT");
         b2.setFocusable(false);
         b2.setFont(new Font("cooper black", 0, 40));
         b2.setForeground(Color.GREEN);
