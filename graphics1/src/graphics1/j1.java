@@ -109,7 +109,7 @@ public class j1 extends JFrame implements ActionListener {
     }
 
     private void botones2() {
-        //when we will click on start this panel will appear
+        //when we will click on Difficulty button this panel will appear
         b11 = new SnakeGame();
         //boton 1 start
         b3 = new JButton("DIFFICULTY");
