@@ -31,10 +31,9 @@ El jugador será una serpiente cuyo objetivo es sobrevivir comiendo manzanas sin
 
 ## 2. Información <br/>
 
-La serpiente estará compuesta por la cabeza y el cuerpo; en el momento que la serpiente se encuentre con una fruta y la “coma", este crecerá y el jugador ganará x puntos. Para llevar esto a cabo tendremos que saber cuándo la serpiente ha comido una fruta.
+La serpiente estará compuesta por la cabeza y el cuerpo; en el momento que la serpiente se encuentre con una fruta y la “coma", esta crecerá y el jugador ganará 120 puntos. Para llevar esto a cabo tendremos que saber cuándo la serpiente ha comido una fruta.
 La manera de saber esto consiste en que en el momento que la cabeza esté en la misma posición (x,y) que la fruta, consideraremos que la serpiente la ha comido. En este instante, la fruta desaparecerá, la serpiente crecerá y aparecerá una nueva fruta en una posición aleatoria del mapa.
 Además, el movimiento de la serpiente se basa en lo que el usuario decide, es decir, la serpiente se moverá en una dirección dada y cada dirección nueva hará que la cabeza gire seguida del cuerpo.
-
 
 ## 3. Scope of Project.<br/>
 
@@ -42,7 +41,7 @@ El trabajo principal es escribir un juego de serpiente usando la programación d
 
 ## 4. Referencias. <br/>
 
-## 5. Visión general del documento. <br/>
+## 5. Visión general del documento. <br/>
 
 # 2. Descripción del diseño.<br/>
 | Nombre Del Requisito | Descripción | Prioridad |
@@ -53,6 +52,13 @@ El trabajo principal es escribir un juego de serpiente usando la programación d
 El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando el lenguaje de programación orientado a objetos Java, haciendo uso de clases y objetos.
 
 ## 2. Requisitos funcionales. <br/>
+| Identificador | Descripción |
+|---------------|-------------------------------------------------------------------------------|
+|	RF1	|	Menu
+|	RF2	|
+|	RF3	|
+|	RF4	|
+|	RF5	|
 
 	1. El videojuego tendrá un menú que incluirá distintas opciones, entre las cuales están: el comenzar una partida, seleccionar el nivel de dificultad, las instrucciones y por último, la posibilidad de salir del juego.
 	2. Al pulsar la tecla “Enter” en el menú el juego iniciará automáticamente.
@@ -60,9 +66,9 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 	4. Existirá la posibilidad de parar el juego y ver el menú al pulsar la tecla “ESC”. La única diferencia al menú principal es que este tendrá la posibilidad de reanudar el juego. y no tendrá la posibilidad de cambiar la dificultad.
 	5. El juego tendrá sonido, el cual podrá ser muteado gracias a un icono en la esquina superior derecha.
 	6. El juego contará con varios niveles, los cuales se irán superando al llegar a la puntuación necesaria.
-	7. Cada dos niveles la velocidad de la serpiente incrementará. ¿bonus?
+	7. Por cada nivel que supere el jugador, la velocidad de la serpiente incrementará. 
 	8. Se generará una fruta en una posición aleatoria del mapa.
-	9. Habrá varios tipos de fruta, no solo una.
+	9. Habrá varios tipos de fruta, no solo una generándose de manera aleatoria.
 	10. Acerca del movimiento de la serpiente tendremos varios requisitos funcionales: 
 		1. La serpiente debe poder moverse por toda la pantalla.
 		2. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, eljuego termina y se mostrará en la pantalla “Game Over”. 
@@ -74,20 +80,21 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 	1. El protagonista del videojuego será una serpiente.
 	2. Este sistema debería proporcionar la capacidad de operar en un compilador de java junto con la seguridad.
 	3. La interfaz fácil de usar y la respuesta rápida.
-	4. 
+	4. El fondo del menú será una imagen de una serpiente.
+	
 ## 4. Especificacion de Requisitos Funcionales.
 
 ## 5. Casos de uso. <br/> 
 	A continuación, se detallarán distintos casos de uso como: Iniciar el juego, salir del juego o elegir nivel. 
 	
-| 1. Caso de Uso  | **Iniciar el juego**                                                                                               |
+| Nombre del caso de uso  | **Iniciar el juego**                                                                                               |
 |-----------------|------------------------------------------------------------------------------------------------------------------|
 | Actor           | Usuario                                                                                                          |
 | Pre-Condición   | El usuario irá al menú principal para elegir el juego para comenzar.                                             |
 | Post-Condición: | Se iniciará el juego.                                                                                            |
 | Descripcion:    | El usuario abre el menú principal y elige el nivel. Luego, haga clic en el botón de inicio y comenzará el juego. |
 
-| 2. Caso de Uso  | Sonido escendido / apagado                                                   |
+| Nombre del caso de uso  | Sonido escendido / apagado                                                   |
 |-----------------|----------------------------------------------------------------------------- |
 | Actor           | Usuario: 								         |
 | Descripcion:    | El jugador puede encender o apagar el sonido durante el juego.               |
@@ -95,14 +102,14 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 | Post-Condición: | Despues de hacer click en el boton  el sonido estará escendido o apagado.    |
 
 
-| 3. Caso de Uso  | Elegir nivel                                                                  |
+| Nombre del caso de uso  | Elegir nivel                                                                  |
 |-----------------|-------------------------------------------------------------------------------|
 | Actor           | Usuario: El usuario podrá elegir el nivel a su propia decisión.               |
 | Descripcion:    | Cuando el usuario haga clic en Elegir nivel, el nivel se asignará al usuario. |
 | Pre-Condición   | El usuario elegirá el nivel por menú.                                         |
 | Post-Condición: | El nivel asignará al usuario qué nivel elige el usuario.                      |
 
-| 4. Caso de Uso  | Salir del juego                                                                                                                                                                           |
+| Nombre del caso de uso  | Salir del juego                                                                                                                                                                           |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Actor           | Jugador.							  | 
 | Descripcion:    | Cuando el jugador haga clic en el botón de nsalida después de hacer clic en el botón de salir, aparecerá el mensaje preguntando si está seguro de querer salir, permitiendole seleccionar si o no; en el caso de que la opción seleccionada sea sí el juego terminará. |
@@ -121,6 +128,11 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 |--------------------------------------------|---------------------------------------|
 | El usuario irá al menú principal.          | El sistema muestra el menú principal. |
 | El usuario seleccionará la opción "Start". | El sistema correrá el juego.          |
+
+| Requisito Funcional | Actor                                                                 |
+|-----------------|-------------------------------------------------------------------------------|
+|	| Sistema |
+|	| Sistema |
 
 
 ## 6.Diagramas Casos de uso :<br/>
