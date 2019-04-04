@@ -1,8 +1,10 @@
 # Software Requirements Specification
 
-**1. Introducción.**	<br/>
-	1. Objetivo.	 <br/>
-	2. Información. <br/>
+Tabla de contenidos
+===================
+-   [1. Introducción](#Introducción)
+	- [1 Objetivo] (#Objetivo)
+	- [2. Información] (#Información)
 	3. Scope of Project.  <br/>
  	4. Referencias.  <br/>
 	5. Visión general del documento. <br/>
@@ -20,16 +22,16 @@
 **5. Referencias.**	<br/>
 
 
-# 1. Introducción. <br/>
-
+# 1. Introducción.<a name="Introducción"></a>
+===============
 La documentación de este proyecto incluye cómo usar el proyecto y lo necesario para entender el desarrollo del mismo.
 
-## 1. Objetivo. <br/>
+## 1.1 Objetivo.<a name="Objetivo"></a>
 
 Este documento constará de la información y los procedimientos necesarios a seguir para desarrollar el famoso videojuego retro Snake (de un solo jugador).
 El jugador será una serpiente cuyo objetivo es sobrevivir comiendo manzanas sin chocarse con las paredes o comerse su propia cola, ya que esto provocará que muera y por lo tanto, se reinicie el juego. 
 
-## 2. Información <br/>
+## 1.2. Información <a name="Información"></a>
 
 La serpiente estará compuesta por la cabeza y el cuerpo; en el momento que la serpiente se encuentre con una fruta y la “coma", esta crecerá y el jugador ganará 120 puntos. Para llevar esto a cabo tendremos que saber cuándo la serpiente ha comido una fruta.
 La manera de saber esto consiste en que en el momento que la cabeza esté en la misma posición (x,y) que la fruta, consideraremos que la serpiente la ha comido. En este instante, la fruta desaparecerá, la serpiente crecerá y aparecerá una nueva fruta en una posición aleatoria del mapa.
