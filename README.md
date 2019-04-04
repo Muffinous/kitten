@@ -3,24 +3,23 @@
 Tabla de contenidos
 ===================
 -   [1. Introducción](#Introducción)
-	- [1 Objetivo] (#Objetivo)
-	- [2. Información] (#Información)
-	3. Scope of Project.  <br/>
- 	4. Referencias.  <br/>
-	5. Visión general del documento. <br/>
-**2. Descripción del diseño.**	<br/>
-	1. Tecnología y entorno de desarrollo. <br/>
-	2. Resumen de requisitos funcionales.	<br/> 
-	3. Requisitos no funcionales.	<br/>
-	4. Especificación de Requisitos Funcionales <br/>
-	5. Casos de uso. <br/>	
-	6. Diagramas de los casos de uso. <br/>	
+	- [1.1 Objetivo](#Objetivo)
+	- [1.2 Información](#Información)
+	- [1.3 Scope of Project](#ScopeOfProject)
+ 	- [1.4 Referencias](#Referencias)  
+	- [1.5 Visión general del documento](#VisionGeneral)
+- [2. Descripción del diseño.]	<br/>
+	- [2.1 Tecnología y entorno de desarrollo] <br/>
+	- [2.2 Resumen de requisitos funcionales]	<br/> 
+	- [2.3 Requisitos no funcionales]	<br/>
+	- [2.4 Especificación de Requisitos Funcionales] <br/>
+	- [2.5 Casos de uso] <br/>	
+	- [2.6 Diagramas de los casos de uso] <br/>	
 **3. Modelo vista-controlador.**	<br/>
 **4. Arquitectura del sistema.**	<br/>
 	1. Componentes del juego.	<br/>
 	2. Arquitectura del juego. 	<br/>
 **5. Referencias.**	<br/>
-
 
 # 1. Introducción.<a name="Introducción"></a>
 ===============
@@ -37,13 +36,13 @@ La serpiente estará compuesta por la cabeza y el cuerpo; en el momento que la s
 La manera de saber esto consiste en que en el momento que la cabeza esté en la misma posición (x,y) que la fruta, consideraremos que la serpiente la ha comido. En este instante, la fruta desaparecerá, la serpiente crecerá y aparecerá una nueva fruta en una posición aleatoria del mapa.
 Además, el movimiento de la serpiente se basa en lo que el usuario decide, es decir, la serpiente se moverá en una dirección dada y cada dirección nueva hará que la cabeza gire seguida del cuerpo.
 
-## 3. Scope of Project.<br/>
+## 1.3. Scope of Project.<a name="ScopeOfProject"></a>
 
 El trabajo principal es escribir un juego de serpiente usando la programación de java. Este juego generará diversos problemas relacionados con las matemáticas. El jugador tiene que responder las preguntas controlando una serpiente con las teclas del teclado para comer la manzana de respuesta. Cada manzana de respuesta correcta que se come prolonga la vida de la serpiente.
 
-## 4. Referencias. <br/>
+## 1.4. Referencias. <a name="Referencias"></a>
 
-## 5. Visión general del documento. <br/>
+## 1.5. Visión general del documento. <a name="VisionGeneral"></a>
 
 # 2. Descripción del diseño.<br/>
 | Nombre Del Requisito | Descripción | Prioridad |
