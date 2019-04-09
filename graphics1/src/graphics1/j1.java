@@ -122,28 +122,28 @@ public class j1 extends JFrame implements ActionListener {
 
         ActionListener ac11 = new ActionListener() {
 
-            @Override
+           @Override
             public void actionPerformed(ActionEvent e) {
 
                 UIManager.put("OptionPane.background", Color.TRANSLUCENT);
                 UIManager.put("Panel.background", Color.TRANSLUCENT);
                 UIManager.put("Button.background", Color.white);
 
-                String[] cab = new String[3];
-                cab[0] = NORMAL;
-                cab[1] = MEDIUM;
-                cab[2] = DIFFICULT;
+                String[] level = new String[3];
+                level[0] = NORMAL;
+                level[1] = MEDIUM;
+                level[2] = DIFFICULT;
 
-                Object selectedCab = JOptionPane.showInputDialog(null, "ELIGE NIVEL", "DIFFICULTY", JOptionPane.QUESTION_MESSAGE, null, cab, NORMAL);
-                if (selectedCab.equals(NORMAL)) {
+                Object selectedLevel = JOptionPane.showInputDialog(null, "ELIGE NIVEL", "DIFFICULTY", JOptionPane.QUESTION_MESSAGE, null, level, NORMAL);
+                if (selectedLevel.equals(NORMAL)) {
                     DELAY = 300;
 
                 }
-                if (selectedCab.equals(MEDIUM)) {
+                if (selectedLevel.equals(MEDIUM)) {
                     DELAY = 100;
 
                 }
-                if (selectedCab.equals(DIFFICULT)) {
+                if (selectedLevel.equals(DIFFICULT)) {
                     DELAY = 70;
                 }
 
@@ -153,6 +153,7 @@ public class j1 extends JFrame implements ActionListener {
         b3.addActionListener(ac11);
         login.add(b3);
     }
+
 
     private void boton3() {
         name2 = new JPanel();
