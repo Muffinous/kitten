@@ -35,7 +35,8 @@ public class SnakeGame extends JPanel implements ActionListener {
 
     // Define the delay between 'ticks' of the timer
     // Timer will trigger actionPerformed method every 100ms
-    private final int D1 = 120;
+    private int D1 = 120;
+  
 
     // Setup colors for drawing snake
     private final Color SNAKE_HEAD_COLOR = new Color(Integer.parseInt("215E21", 16));
@@ -77,6 +78,7 @@ public class SnakeGame extends JPanel implements ActionListener {
         setBackground(Color.BLACK);
         setBounds(25, 107, 800, 800);
         setFocusable(true);
+
         // Adds keyboard press listeners for controlling the snake
         addKeyListener(new SnakeKeyListener());
         initGameBoard();
@@ -132,10 +134,11 @@ public class SnakeGame extends JPanel implements ActionListener {
             // Paint the score at the top left
             int score = ((numSnakeTiles * D1) - (INITIAL_SNAKE_TILES * D1));
             String msg = "Score: " + score;
-            Font small = new Font("Helvetica Nueue", Font.BOLD, 16);
+           
+            Font small = new Font("Helvetica Nueue", Font.BOLD, 20);
             g.setColor(Color.GREEN);
             g.setFont(small);
-            g.drawString(msg, WIDTH - 100, 30);
+            g.drawString(msg, WIDTH - 150, 30);
 
             // Tell the System to do the Drawing now,
             // otherwise it can take a few extra ms until
