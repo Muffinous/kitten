@@ -10,9 +10,10 @@ import javax.swing.plaf.ColorUIResource;
 
 public class j1 extends JFrame implements ActionListener {
 
-    private JPanel heading, name3, login, name2;
+    private JPanel heading, name3, name4, login, name2;
+
     private JLabel background;
-    private JFrame j;
+    private JFrame j, h;
     private JButton b, b1, b2, b3;
     private SnakeGame b11;
     private Timer t;
@@ -20,12 +21,12 @@ public class j1 extends JFrame implements ActionListener {
     private static final String MEDIUM = "Medium";
     private static final String DIFFICULT = "Difficult";
 
-    private int DELAY;
+    private int DELAY = 120;
 
     public j1() {
 
         setSize(1200, 970);
-        setBackground(Color.CYAN);
+
         setUndecorated(true); //
         getRootPane().setWindowDecorationStyle(JRootPane.COLOR_CHOOSER_DIALOG);//for changing titlebar
         this.setResizable(false);
@@ -46,7 +47,7 @@ public class j1 extends JFrame implements ActionListener {
 
     }
 
-    private void iniciarComponentes() {
+    private void iniciarComponentes() {//calling all panels  and botons 
 
         botones();
         paneles2();
@@ -60,7 +61,7 @@ public class j1 extends JFrame implements ActionListener {
 
     }
 
-    private void paneles() {
+    private void paneles() {//JFrame heading
         heading = new JPanel();
         this.getContentPane().add(heading);
         heading.setBackground(new Color(0, 0, 0, 20));
@@ -72,7 +73,7 @@ public class j1 extends JFrame implements ActionListener {
         heading.add(name);
     }
 
-    private void paneles2() {
+    private void paneles2() {  //side panel in which we have all buttons (start, instructions, difficulty,, exit)
         login = new JPanel();
         this.getContentPane().add(login);
 
@@ -110,52 +111,23 @@ public class j1 extends JFrame implements ActionListener {
 
     private void botones2() {
         //when we will click on Difficulty button this panel will appear
-        b11 = new SnakeGame();
-        //boton 1 start
+        name4 = new JPanel();
+
+        //boton 2 difficulty
         b3 = new JButton("DIFFICULTY");
         b3.setFocusable(false);
         b3.setFont(new Font("cooper black", 0, 40));
         b3.setForeground(Color.GREEN);
-        ;
+
         b3.setBackground(Color.BLACK);
         b3.setBounds(10, 90, 250, 50);
 
-        ActionListener ac11 = new ActionListener() {
+        b3.addActionListener(this);
 
-           @Override
-            public void actionPerformed(ActionEvent e) {
-
-                UIManager.put("OptionPane.background", Color.TRANSLUCENT);
-                UIManager.put("Panel.background", Color.TRANSLUCENT);
-                UIManager.put("Button.background", Color.white);
-
-                String[] level = new String[3];
-                level[0] = NORMAL;
-                level[1] = MEDIUM;
-                level[2] = DIFFICULT;
-
-                Object selectedLevel = JOptionPane.showInputDialog(null, "ELIGE NIVEL", "DIFFICULTY", JOptionPane.QUESTION_MESSAGE, null, level, NORMAL);
-                if (selectedLevel.equals(NORMAL)) {
-                    DELAY = 300;
-
-                }
-                if (selectedLevel.equals(MEDIUM)) {
-                    DELAY = 100;
-
-                }
-                if (selectedLevel.equals(DIFFICULT)) {
-                    DELAY = 70;
-                }
-
-            }
-
-        };
-        b3.addActionListener(ac11);
         login.add(b3);
     }
 
-
-    private void boton3() {
+    private void boton3() {//  exit button method after clicking on it there will be options of yes and no if you click on on yes button game window will be closed else it will continue
         name2 = new JPanel();
         b2 = new JButton("EXIT");
         b2.setFocusable(false);
@@ -190,25 +162,25 @@ public class j1 extends JFrame implements ActionListener {
 
     }
 
-    private void boton4() {
+    private void boton4() {// instructionn button after clicking on it u will see a frame with instructions
 
         name3 = new JPanel();
-        
-        b2 = new JButton("INSTRUCTION");
-        b2.setFocusable(false);
-        b2.setFont(new Font("cooper black", 0, 40));
-        b2.setForeground(Color.GREEN);
-        b2.setBackground(Color.BLACK);
 
-        b2.setBounds(40, 300, 250, 50);
+        b1 = new JButton("INSTRUCTION");
+        b1.setFocusable(false);
+        b1.setFont(new Font("cooper black", 0, 40));
+        b1.setForeground(Color.GREEN);
+        b1.setBackground(Color.BLACK);
 
-        b2.addActionListener(this);
+        b1.setBounds(40, 300, 250, 50);
 
-        login.add(b2);
+        b1.addActionListener(this);
+
+        login.add(b1);
 
     }
 
-    private void colocarbackground() {// method for background for all panels 
+    private void colocarbackground() {//  background methods  for all panels 
         ImageIcon backimage = new ImageIcon("C:/Users/alldocube/Pictures/snake.jpg");
         Image img = backimage.getImage();
         Image temp_img = img.getScaledInstance(1200, 950, Image.SCALE_SMOOTH);
@@ -220,40 +192,101 @@ public class j1 extends JFrame implements ActionListener {
         background.add(b11);
         background.add(name3);
         background.add(name2);
+        background.add(name4);
         add(background);
 
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {//when you click on button instruction this action will perform and it will be a new JFrame
+    public void actionPerformed(ActionEvent e) {
+          //if we will click on instruction button new frame will appear else difficulty button action will be perforrmed 
+        if(e.getSource()==b1){   
         JPanel h1 = new JPanel();
-        this.getContentPane().add(h1);
-        h1.setBackground(new Color(0, 0, 0, 0));
-        h1.setBounds(0, 138, 600, 100);
-        JLabel name = new JLabel();
-        name.setText("-Para reiniciar el juego pulsa 'ENTER'");
-        
-        name.setForeground(Color.GREEN);
-        name.setFont(new Font("cooper black", 0, 23));
-       
-        h1.add(name);
-        j = new JFrame();
-        j.setUndecorated(true);
-        j.getRootPane().setWindowDecorationStyle(JRootPane.COLOR_CHOOSER_DIALOG);
-        j.setResizable(false);
-        ImageIcon backimage = new ImageIcon("C:/Users/alldocube/Pictures/green2.jpg");
-        Image img = backimage.getImage();
-        Image temp_img = img.getScaledInstance(600, 600, Image.SCALE_SMOOTH);
-        backimage = new ImageIcon(temp_img);
-        JLabel background1 = new JLabel(" ", backimage, JLabel.CENTER);
+            this.getContentPane().add(h1);
+            h1.setBackground(new Color(0, 0, 0, 0));
+            h1.setBounds(0, 138, 600, 100);
+            JLabel name = new JLabel();
+            name.setText("-Para reiniciar el juego pulsa 'ENTER'");
+            name.setForeground(Color.GREEN);
+            name.setFont(new Font("cooper black", 0, 23));
 
-        j.setBounds(this.getLocationOnScreen().x + 120, this.getLocationOnScreen().y + 250, 600, 600);
-        background1.add(h1);
-        j.add(background1);
+            h1.add(name);
+            j = new JFrame();
+            j.setUndecorated(true);
+            j.getRootPane().setWindowDecorationStyle(JRootPane.COLOR_CHOOSER_DIALOG);
+            j.setResizable(false);
+            ImageIcon backimage = new ImageIcon("C:/Users/alldocube/Pictures/green2.jpg");
+            Image img = backimage.getImage();
+            Image temp_img = img.getScaledInstance(600, 600, Image.SCALE_SMOOTH);
+            backimage = new ImageIcon(temp_img);
+            JLabel background1 = new JLabel(" ", backimage, JLabel.CENTER);
 
-        j.setVisible(true);
-        j.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            j.setBounds(this.getLocationOnScreen().x + 120, this.getLocationOnScreen().y + 250, 600, 600);
+            background1.add(h1);
+            j.add(background1);
+            j.setVisible(true);
+            j.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+ 
+        }else  {
+            //its the panel in which radiobuttons will appear
+            JPanel name4 = new JPanel();
+            name4.setBounds(0, 138, 590, 90);
+            name4.setBackground(Color.darkGray);            
+            ButtonGroup b = new ButtonGroup();
+            JRadioButton r1 = new JRadioButton();
+            r1.setFocusable(false);//radio button normal  with all settings
+            r1.setText("NORMAL");
+            r1.setFont(new Font("cooper black", 0, 30));
+            r1.setForeground(Color.GREEN);
+            r1.setBackground(null);
 
+            JRadioButton r2 = new JRadioButton();//radio button medium with all settings
+            r2.setText("MEDIUM");
+            r2.setFont(new Font("cooper black", 0, 30));
+            r2.setForeground(Color.GREEN);
+            r2.setBackground(null);
+            r2.setFocusable(false);
+
+            JRadioButton r3 = new JRadioButton(); //radio button difficulty  with all settings
+            r3.setText("DIFFICULTY");
+            r3.setFont(new Font("cooper black", 0, 30));
+            r3.setForeground(Color.GREEN);
+            r3.setBackground(null);
+            r3.setFocusable(false);
+            b.add(r1);
+            b.add(r2);
+            b.add(r3);
+            name4.add(r1);
+            name4.add(r2);
+            name4.add(r3);
+            
+
+            if (r1.isSelected()) {
+                DELAY = 100;
+            } else if (r2.isSelected()) {
+                DELAY = 200;
+
+            } else if (r3.isSelected()) {
+
+                DELAY = 70;
+            }
+
+            h = new JFrame();//frame for difficulty button
+            h.setUndecorated(true);
+            h.getRootPane().setWindowDecorationStyle(JRootPane.COLOR_CHOOSER_DIALOG);
+            h.setBounds(this.getLocationOnScreen().x + 120, this.getLocationOnScreen().y + 250, 600,400);
+           
+            ImageIcon back = new ImageIcon("C:/Users/alldocube/Pictures/green2.jpg");//backgroud image of frame 
+            Image im = back.getImage();
+            Image temp_im = im.getScaledInstance(600, 600, Image.SCALE_SMOOTH);
+            back = new ImageIcon(temp_im);
+            JLabel background2 = new JLabel(" ", back, JLabel.CENTER);
+            background2.add(name4);
+            h.add(background2);
+            h.setVisible(true);
+            h.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        }
+        }
     }
 
-}
+
