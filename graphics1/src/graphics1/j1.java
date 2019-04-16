@@ -21,10 +21,12 @@ public class j1 extends JFrame implements ActionListener {
     private SnakeGame b11;
     private Timer t;
     private int DELAY = 100;
+    private boolean start;
 
     public j1() {
 
         setSize(1200, 960);
+        start = true;
 
         setUndecorated(true); //
         getRootPane().setWindowDecorationStyle(JRootPane.COLOR_CHOOSER_DIALOG);//for changing titlebar
@@ -38,11 +40,14 @@ public class j1 extends JFrame implements ActionListener {
         int y = (dim.height - h) / 2;
 
         // Move the window to the center of screen 
+        r1 = new JRadioButton();
+        r1.setSelected(true);
+        r2 = new JRadioButton();
+        r3 = new JRadioButton();
         this.setLocation(x, y);
         setTitle("SNAKE GAME");
         iniciarComponentes();
         setVisible(true);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
 
     }
 
@@ -103,8 +108,10 @@ public class j1 extends JFrame implements ActionListener {
                 if (b11.isGameRunning) {
 
                     b11.initGameBoard();
+
                     selected();
                     t = new Timer(DELAY, b11);
+
                     t.start();
 
                 } else {
@@ -227,6 +234,7 @@ public class j1 extends JFrame implements ActionListener {
                     + "-Para ir Arriba pulsa boton de arriba en de teclado.\n"
                     + "-Para ir abajo pulsa boton de abajo en de teclado.";
             JTextArea area = new JTextArea(content);//you will see instructions included this jtextarea after clicking on instruction button
+            area.setEditable(false);
             area.setFont(new Font("cooper black", 2, 19));
             h1.setBounds(15, 80, 600, 400);
 
@@ -257,7 +265,7 @@ public class j1 extends JFrame implements ActionListener {
             name4.setBounds(0, 138, 590, 50);
             name4.setBackground(Color.BLACK);
             ButtonGroup b = new ButtonGroup();
-            r1 = new JRadioButton();
+
             r1.setFocusable(false);//radio button "normal " with all settings
             r1.setText("NORMAL");
             r1.setFont(new Font("cooper black", 0, 30));
@@ -300,6 +308,7 @@ public class j1 extends JFrame implements ActionListener {
             h.add(background2);
             h.setVisible(true);
             h.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+            start = false;
 
         }
     }
@@ -318,3 +327,4 @@ public class j1 extends JFrame implements ActionListener {
         }
     }
 }
+
