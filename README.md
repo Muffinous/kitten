@@ -2,7 +2,7 @@
 
 Tabla de contenidos
 ===================
--   [1. Introducción](#introducción)
+-   [1. Introducción](#introduccion)
 	- [1.1 Objetivo](#Objetivo)
 	- [1.2 Información](#Información)
 	- [1.3 Scope of Project](#ScopeOfProject)
@@ -21,7 +21,7 @@ Tabla de contenidos
 	2. Arquitectura del juego. 	<br/>
 **5. Referencias.**	<br/>
 
-# 1. Introducción.
+# 1. Introducción.<a name="introduccion"></a>
 ===============
 La documentación de este proyecto incluye cómo usar el proyecto y lo necesario para entender el desarrollo del mismo.
 
