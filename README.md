@@ -21,7 +21,7 @@ Tabla de contenidos
 	2. Arquitectura del juego. 	<br/>
 **5. Referencias.**	<br/>
 
-# 1. Introducción.<a name="1. Introducción"></a>
+# 1. Introducción.<a name="Introducción"></a>
 ===============
 La documentación de este proyecto incluye cómo usar el proyecto y lo necesario para entender el desarrollo del mismo.
 
