@@ -2,7 +2,7 @@
 
 Tabla de contenidos
 ===================
--   1. [Introducción](#Introducción)
+-   [1. Introducción](#Introducción)
 	- [1.1 Objetivo](#Objetivo)
 	- [1.2 Información](#Información)
 	- [1.3 Scope of Project](#ScopeOfProject)
