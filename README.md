@@ -160,3 +160,7 @@ Sound ON/OFF :<br/>
 
 Exit Game:<br/>
 ![GRAPH2 (4)](https://user-images.githubusercontent.com/45390300/54087406-dca9b700-4352-11e9-83c2-226919e670e1.png)
+
+UML:<br/>
+![change (1)](https://user-images.githubusercontent.com/45390300/56377803-86f6e300-620b-11e9-9e76-d98071f4bb14.jpg)
+
