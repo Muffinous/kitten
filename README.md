@@ -142,7 +142,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 
 
 Start Game :<br/>
-![start (1)](https://user-images.githubusercontent.com/45390300/56459745-82ac0080-6398-11e9-80b4-8746c83c4b76.png)
+![START (2)](https://user-images.githubusercontent.com/45390300/56459772-e1717a00-6398-11e9-8fe5-4d2b070c8c82.png)
 
 
 Choose Level :<br/>
