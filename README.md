@@ -141,14 +141,13 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 ![caso de uso](https://user-images.githubusercontent.com/45390300/56459578-db2dce80-6395-11e9-8d22-96486c0e40bd.png)
 
 
-Start Game                           Choose Level    :<br/>
+Start Game/Choose Level    :<br/>
 ![START (2)](https://user-images.githubusercontent.com/45390300/56459772-e1717a00-6398-11e9-8fe5-4d2b070c8c82.png) 
 ![CHOOSE](https://user-images.githubusercontent.com/45390300/56459801-462cd480-6399-11e9-87de-263651f54aec.png)
-Sound ON/OFF :<br/>
-![GRAPH2 (5)](https://user-images.githubusercontent.com/45390300/54087449-327e5f00-4353-11e9-8286-8e01372327fc.png)
+INSTRUCTIONS/EXIT :<br/>
+![INSTRUCTION](https://user-images.githubusercontent.com/45390300/56459887-83459680-639a-11e9-93a8-133d71cdb6b5.png)
+![EXIT](https://user-images.githubusercontent.com/45390300/56459949-76757280-639b-11e9-9610-6b0491f1f9b2.png)
 
-Exit Game:<br/>
-![GRAPH2 (4)](https://user-images.githubusercontent.com/45390300/54087406-dca9b700-4352-11e9-83c2-226919e670e1.png)
 
 UML:<br/>
 ![change (1)](https://user-images.githubusercontent.com/45390300/56377803-86f6e300-620b-11e9-9e76-d98071f4bb14.jpg)
