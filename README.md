@@ -22,7 +22,7 @@ Tabla de contenidos
 - [5. Referencias.](#Referencias)
 
 # 1. Introducción.<a name="Introducción"></a>
-===============
+
 La documentación de este proyecto incluye cómo usar el proyecto y lo necesario para entender el desarrollo del mismo.
 
 ## 1.1 Objetivo.<a name="Objetivo"></a>
@@ -53,28 +53,21 @@ El trabajo principal es escribir un juego de serpiente usando la programación d
 El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando el lenguaje de programación orientado a objetos Java, haciendo uso de clases y objetos.
 
 ## 2. Resumen de requisitos funcionales. <a name="RF"></a>
-| Identificador | Descripción |
+| Identificador | Nombre del requisito |
 |---------------|-------------------------------------------------------------------------------|
 |	RF1	|	Menu
-|	RF2	|
-|	RF3	|
-|	RF4	|
-|	RF5	|
+|	RF2	|	Inicio automatico
+|	RF3	|	Control de la dirección
+|	RF4	|	Posibilidad de parar el juego
+|	RF5	|	Variedad de niveles	
+|	RF6	|	Incremento de la velocidad
+|	RF7	|	Fruta
+|	RF8	|	Varios tipos de fruta
+|	RF9	|	Movimiento por toda la pantalla
+|	RF10	|	Game Over
+|	RF11	|	Incremento del tamaño
+|	RF12	|	Constante movimiento
 
-	1. El videojuego tendrá un menú que incluirá distintas opciones, entre las cuales están: el comenzar una partida, seleccionar el nivel de dificultad, las instrucciones y por último, la posibilidad de salir del juego.
-	2. Al pulsar la tecla “Enter” en el menú el juego iniciará automáticamente.
-	3. El jugador podrá controlar la dirección de la serpiente con las teclas “A”,”S”,”D” y ”W”. De manera intuitiva la tecla A será para la izquierda, la S para abajo, la D para la derecha y por último, la D hacia arriba. (o con las teclas de dirección del teclado)
-	4. Existirá la posibilidad de parar el juego y ver el menú al pulsar la tecla “ESC”. La única diferencia al menú principal es que este tendrá la posibilidad de reanudar el juego. y no tendrá la posibilidad de cambiar la dificultad.
-	5. El juego tendrá sonido, el cual podrá ser muteado gracias a un icono en la esquina superior derecha.
-	6. El juego contará con varios niveles, los cuales se irán superando al llegar a la puntuación necesaria.
-	7. Por cada nivel que supere el jugador, la velocidad de la serpiente incrementará. 
-	8. Se generará una fruta en una posición aleatoria del mapa.
-	9. Habrá varios tipos de fruta, no solo una generándose de manera aleatoria.
-	10. Acerca del movimiento de la serpiente tendremos varios requisitos funcionales: 
-		1. La serpiente debe poder moverse por toda la pantalla.
-		2. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, eljuego termina y se mostrará en la pantalla “Game Over”. 
-		3. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
-		4.La serpiente estará en constante movimiento.
 
 ## 3. Requisitos no funcionales. <a name="RNF"></a>
 
@@ -84,7 +77,21 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 	4. El fondo del menú será una imagen de una serpiente.
 	
 ## 4. Especificacion de Requisitos Funcionales <a name="EspecificacionRF"></a>
-
+	
+	RF1. El videojuego tendrá un menú que incluirá distintas opciones, entre las cuales están: el comenzar una partida, seleccionar el nivel de dificultad, las instrucciones y por último, la posibilidad de salir del juego.
+	RF2. Al pulsar la tecla “Enter” en el menú el juego iniciará automáticamente.
+	RF3. El jugador podrá controlar la dirección de la serpiente con las teclas “A”,”S”,”D” y ”W”. De manera intuitiva la tecla A será para la izquierda, la S para abajo, la D para la derecha y por último, la D hacia arriba. (o con las teclas de dirección del teclado)
+	RF4. Existirá la posibilidad de parar el juego y ver el menú al pulsar la tecla “ESC”. La única diferencia al menú principal es que este tendrá la posibilidad de reanudar el juego. y no tendrá la posibilidad de cambiar la dificultad.
+	RF5. El juego contará con varios niveles, los cuales se irán superando al llegar a la puntuación necesaria.
+	RF6. Por cada nivel que supere el jugador, la velocidad de la serpiente incrementará. 
+	RF7. Se generará una fruta en una posición aleatoria del mapa.
+	RF8. Habrá varios tipos de fruta, no solo una, generándose de manera aleatoria.
+Acerca del movimiento de la serpiente tendremos varios requisitos funcionales: 
+	RF9. La serpiente debe poder moverse por toda la pantalla.
+	RF10. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, eljuego termina y se mostrará en la pantalla “Game Over”. 
+	RF11. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
+	RF12.La serpiente estará en constante movimiento.
+	
 ## 5. Casos de uso. <a name="CasosUso"></a>
 	A continuación, se detallarán distintos casos de uso como: Iniciar el juego, salir del juego o elegir nivel. 
 	
