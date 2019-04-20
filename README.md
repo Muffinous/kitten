@@ -143,11 +143,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 
 Start Game :<br/>
 ![START (2)](https://user-images.githubusercontent.com/45390300/56459772-e1717a00-6398-11e9-8fe5-4d2b070c8c82.png)
-
-
-Choose Level :<br/>
-![GRAPH2 (1)](https://user-images.githubusercontent.com/45390300/54087210-f6e29580-4350-11e9-9e72-4cb61155deef.png)
-
+![CHOOSE](https://user-images.githubusercontent.com/45390300/56459801-462cd480-6399-11e9-87de-263651f54aec.png)
 Sound ON/OFF :<br/>
 ![GRAPH2 (5)](https://user-images.githubusercontent.com/45390300/54087449-327e5f00-4353-11e9-8286-8e01372327fc.png)
 
