@@ -138,7 +138,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 
 ## 6.Diagramas Casos de uso :<br/>
 
-![caso](https://user-images.githubusercontent.com/45390300/56459512-f4824b00-6394-11e9-9590-e5480bb63ecc.png)
+![caso de uso](https://user-images.githubusercontent.com/45390300/56459578-db2dce80-6395-11e9-8d22-96486c0e40bd.png)
 
 
 Start Game :<br/>
