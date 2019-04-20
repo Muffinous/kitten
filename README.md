@@ -12,7 +12,7 @@ Tabla de contenidos
 	- [2.1 Tecnología y entorno de desarrollo](#EntornoDesarrollo)
 	- [2.2 Resumen de requisitos funcionales](#RF)
 	- [2.3 Requisitos no funcionales](#RNF)
-	- [2.4 Especificación de Requisitos Funcionales](#EspecificacionRF)
+	- [2.4 Especificación de Requisitos Funcionales](#EspecificacionRF)
 	- [2.5 Casos de uso](#CasosUso)	
 	- [2.6 Diagramas de los casos de uso](#DiagramasCasosUso)
 - [3. Modelo vista-controlador.](#MVC)
