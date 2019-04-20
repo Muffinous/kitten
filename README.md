@@ -2,24 +2,24 @@
 
 Tabla de contenidos
 ===================
--   [1. Introducción](#Introducción)
+- [1. Introducción](#Introducción)
 	- [1.1 Objetivo](#Objetivo)
 	- [1.2 Información](#Información)
 	- [1.3 Scope of Project](#ScopeOfProject)
  	- [1.4 Referencias](#Referencias)  
 	- [1.5 Visión general del documento](#VisionGeneral)
-- [2. Descripción del diseño.]	<br/>
-	- [2.1 Tecnología y entorno de desarrollo] <br/>
-	- [2.2 Resumen de requisitos funcionales]	<br/> 
-	- [2.3 Requisitos no funcionales]	<br/>
-	- [2.4 Especificación de Requisitos Funcionales] <br/>
-	- [2.5 Casos de uso] <br/>	
-	- [2.6 Diagramas de los casos de uso] <br/>	
-**3. Modelo vista-controlador.**	<br/>
-**4. Arquitectura del sistema.**	<br/>
-	1. Componentes del juego.	<br/>
-	2. Arquitectura del juego. 	<br/>
-**5. Referencias.**	<br/>
+- [2. Descripción del diseño.](#Diseño)
+	- [2.1 Tecnología y entorno de desarrollo](#EntornoDesarrollo)
+	- [2.2 Resumen de requisitos funcionales](#RF)
+	- [2.3 Requisitos no funcionales](#RNF)
+	- [2.4 Especificación de Requisitos Funcionales](#EspecificacionRF)
+	- [2.5 Casos de uso](#CasosUso)	
+	- [2.6 Diagramas de los casos de uso](#DiagramasCasosUso)
+- [3. Modelo vista-controlador.](#MVC)
+- [4. Arquitectura del sistema.](#AS)
+	- [1. Componentes del juego.](#CJ)
+	- [2. Arquitectura del juego.](#AJ)
+- [5. Referencias.](#Referencias)
 
 # 1. Introducción.<a name="Introducción"></a>
 ===============
@@ -44,15 +44,15 @@ El trabajo principal es escribir un juego de serpiente usando la programación d
 
 ## 1.5. Visión general del documento. <a name="VisionGeneral"></a>
 
-# 2. Descripción del diseño.<br/>
+# 2. Descripción del diseño. <a name="Diseño"></a> 
 | Nombre Del Requisito | Descripción | Prioridad |
 |:--------------------:|-------------|:---------:|
 |    Menú principal    |             |    Must   |
 
-## 1. Tecnología y entorno de desarrollo. <br/>
+## 1. Tecnología y entorno de desarrollo. <a name="EntornoDesarrollo"></a>
 El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando el lenguaje de programación orientado a objetos Java, haciendo uso de clases y objetos.
 
-## 2. Requisitos funcionales. <br/>
+## 2. Resumen de requisitos funcionales. <a name="RF"></a>
 | Identificador | Descripción |
 |---------------|-------------------------------------------------------------------------------|
 |	RF1	|	Menu
@@ -76,16 +76,16 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 		3. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
 		4.La serpiente estará en constante movimiento.
 
-## 3. Requisitos no funcionales. <br/>
+## 3. Requisitos no funcionales. <a name="RNF"></a>
 
 	1. El protagonista del videojuego será una serpiente.
 	2. Este sistema debería proporcionar la capacidad de operar en un compilador de java junto con la seguridad.
 	3. La interfaz fácil de usar y la respuesta rápida.
 	4. El fondo del menú será una imagen de una serpiente.
 	
-## 4. Especificacion de Requisitos Funcionales.
+## 4. Especificacion de Requisitos Funcionales <a name="EspecificacionRF"></a>
 
-## 5. Casos de uso. <br/> 
+## 5. Casos de uso. <a name="CasosUso"></a>
 	A continuación, se detallarán distintos casos de uso como: Iniciar el juego, salir del juego o elegir nivel. 
 	
 | Nombre del caso de uso  | **Iniciar el juego**                                                                                               |
@@ -136,7 +136,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 |	| Sistema |
 
 
-## 6.Diagramas Casos de uso :<br/>
+## 6.Diagramas de casos de uso. <a name="DiagramasCasosUso"></a>
 
 ![caso de uso (1)](https://user-images.githubusercontent.com/45390300/56460003-319e0b80-639c-11e9-8674-8230c95870a1.png)
 
@@ -153,3 +153,8 @@ INSTRUCTIONS/EXIT :<br/>
 UML:<br/>
 ![change (1)](https://user-images.githubusercontent.com/45390300/56377803-86f6e300-620b-11e9-9e76-d98071f4bb14.jpg)
 
+# 3. Modelo vista-controlador. <a name="MVC"></a>
+# 4. Arquitectura del sistema. <a name="AS"></a>
+## 1. Componentes del juego. <a name= "CJ"></a>
+## 2. Arquitectura del juego. <a name= "AJ"></a>
+# 5. Referencias. <a name= "Referencias"></a>
