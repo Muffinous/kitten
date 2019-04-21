@@ -86,8 +86,10 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 	RF6. Por cada nivel que supere el jugador, la velocidad de la serpiente incrementará. 
 	RF7. Se generará una fruta en una posición aleatoria del mapa.
 	RF8. Habrá varios tipos de fruta, no solo una, generándose de manera aleatoria.
+	
 Acerca del movimiento de la serpiente tendremos varios requisitos funcionales: 
-	RF9. La serpiente debe poder moverse por toda la pantalla.
+
+	RF9. Habrá varios tipos de fruta, no solo una, generándose de manera aleatoria..
 	RF10. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, eljuego termina y se mostrará en la pantalla “Game Over”. 
 	RF11. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
 	RF12.La serpiente estará en constante movimiento.
