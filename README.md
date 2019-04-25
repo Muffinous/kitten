@@ -93,45 +93,38 @@ Acerca del movimiento de la serpiente tendremos varios requisitos funcionales:
 	
 ## 5. Casos de uso. <a name="CasosUso"></a>
 	A continuación, se detallarán distintos casos de uso como: Iniciar el juego, salir del juego o elegir nivel. 
-	
-| Nombre del caso de uso  | **Iniciar el juego**                                                                   	   |
-|-------------------------|------------------------------------------------------------------------------------------------|
-| Actor           	  | Usuario                                                                                        |
-| Pre-Condición   	  | El usuario irá al menú principal para elegir el juego para comenzar.                           |
-| Post-Condición: 	  | Se iniciará el juego.                                                                          |
-| Descripcion:     	  | El usuario abre el menú principal y elige el nivel. Luego, haga clic en el botón de inicio y comenzará el juego.| 				   
+| Nombre del caso de uso | Iniciar el juego  |
+|--------------------------------------------|------------------------------------------------------------------------------------|
+| Actor | Usuario  |
+| Descripción.  | El usuario seleccionará la opción de iniciar el juego para poder comenzar a jugar.  |
+| Pre-condicion | El usuario irá al menú principal para elegir el juego para comenzar.  |
+| Post-condicion | El juego iniciará.  |
+| **Flujo de datos.** | **Información.**  |
+| El usuario arrancará el juego. | El sistema arrancará el juego y mostrará el menú principal.  |
+| El usuario seleccionará la opción "Start". | El sistema correrá el juego. |
+				   
 
-| Nombre del caso de uso  | Sonido escendido / apagado                                           |
-|-----------------|----------------------------------------------------------------------------- |
-| Actor           | Usuario: 								         |
-| Descripcion:    | El jugador puede encender o apagar el sonido durante el juego.               |
-| Pre-Condición   | Hacer click en el boton de sonido para escender o apagar.                    |
-| Post-Condición: | Despues de hacer click en el boton  el sonido estará escendido o apagado.    |
-
-
-| Nombre del caso de uso  | Elegir nivel                                                          |
+| Nombre del caso de uso  | Elegir nivel  |
 |-----------------|-------------------------------------------------------------------------------|
 | Actor           | Usuario: El usuario podrá elegir el nivel a su propia decisión.               |
 | Descripcion:    | Cuando el usuario haga clic en Elegir nivel, el nivel se asignará al usuario. |
 | Pre-Condición   | El usuario elegirá el nivel por menú.                                         |
 | Post-Condición: | El nivel asignará al usuario qué nivel elige el usuario.                      |
+| **Flujo de datos.**                        | **Información.**         			  |
+| El jugador pinchará en el botón de *Elegir Nivel* | El sistema mostrará un submenú dónde podrá elegir el nivel de dificultad  |
+| El usuario elige el nivel de dificultad | Por último, el sistema actualiza la dificultad del juego y vuelve al menú principal  |
 
 | Nombre del caso de uso  | Salir del Juego  |
 |-----------------|-------------------------------------------------------------------------------|
 | Actor | Jugador  |
-| Descripción | Cuando el jugador haga clic en el botón de nsalida después de hacer clic en el botón de salir, aparecerá el mensaje preguntando si está seguro de querer salir, permitiendole seleccionar si o no; en el caso de que la opción seleccionada sea sí el juego terminará.  |
+| Descripción | Cuando el jugador haga clic en el botón de salida después de hacer clic en el botón de salir, aparecerá un diálogo preguntando si está seguro junto a dos botones para responder si o no; en el caso de que la opción seleccionada sea sí el juego terminará.  |
 | Pre-Condicion | El jugador haga clic en la opción de salida.  |
 | Post-Condición | El juego se terminará.  |
+| **Flujo de datos.** | **Información.**  |
+| El jugador pulsa el botón de *Exit*. | El sistema mostrará un diálogo de usuario esperando la respuesta del jugador.  |
+| El usuario elige la opción de salir. | El sistema cierra el juego. |
 	
-| Nombre del caso de uso 		     | Iniciar el juego                                                                   |
-|--------------------------------------------|------------------------------------------------------------------------------------|
-| Actor                  		     | Usuario                                                                            |
-| Descripción.           		     | El usuario seleccionará la opción de iniciar el juego para poder comenzar a jugar. |
-| Pre-condicion               		     | El usuario irá al menú principal para elegir el juego para comenzar.               |
-| Post-condicion         		     | El juego iniciará.                                                                 |
-| **Flujo de datos.**                        | **Información.**         			      			  |
-| El usuario irá al menú principal.          | El sistema muestra el menú principal. 			      			  |
-| El usuario seleccionará la opción "Start". | El sistema correrá el juego.          			                          |
+
 
 | Requisito Funcional | Actor                                                                 |
 |-----------------|-------------------------------------------------------------------------------|
