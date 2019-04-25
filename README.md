@@ -129,7 +129,7 @@ Acerca del movimiento de la serpiente tendremos varios requisitos funcionales:
 | Descripción.           		     | El usuario seleccionará la opción de iniciar el juego para poder comenzar a jugar. |
 | Pre-condicion               		     | El usuario irá al menú principal para elegir el juego para comenzar.               |
 | Post-condicion         		     | El juego iniciará.                                                                 |
-| Flujo de datos.                            | Información.                          			      			  |
+| **Flujo de datos.**                        | **Información.**         			      			  |
 | El usuario irá al menú principal.          | El sistema muestra el menú principal. 			      			  |
 | El usuario seleccionará la opción "Start". | El sistema correrá el juego.          			                          |
 
