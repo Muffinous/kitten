@@ -45,28 +45,25 @@ El trabajo principal es escribir un juego de serpiente usando la programación d
 ## 1.5. Visión general del documento. <a name="VisionGeneral"></a>
 
 # 2. Descripción del diseño. <a name="Diseño"></a> 
-| Nombre Del Requisito | Descripción | Prioridad |
-|:--------------------:|-------------|:---------:|
-|    Menú principal    |             |    Must   |
 
 ## 1. Tecnología y entorno de desarrollo. <a name="EntornoDesarrollo"></a>
 El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando el lenguaje de programación orientado a objetos Java, haciendo uso de clases y objetos.
 
 ## 2. Resumen de requisitos funcionales. <a name="RF"></a>
-| Identificador | Nombre del requisito |
-|---------------|-------------------------------------------------------------------------------|
-|	RF1	|	Menu
-|	RF2	|	Inicio automatico
-|	RF3	|	Control de la dirección
-|	RF4	|	Posibilidad de parar el juego
-|	RF5	|	Variedad de niveles	
-|	RF6	|	Incremento de la velocidad
-|	RF7	|	Fruta
-|	RF8	|	Varios tipos de fruta
-|	RF9	|	Movimiento por toda la pantalla
-|	RF10	|	Game Over
-|	RF11	|	Incremento del tamaño
-|	RF12	|	Constante movimiento
+| Identificador	| Nombre del requisito			|  Priorización	|
+|---------------|---------------------------------------|---------------|-------------------------|
+|	RF1	|	Menu				|     Should	|
+|	RF2	|	Inicio automatico		|     Could	|
+|	RF3	|	Control de la dirección		|     Must	|
+|	RF4	|	Posibilidad de parar el juego	|     Could	|
+|	RF5	|	Variedad de niveles		|     Won't	|
+|	RF6	|	Incremento de la velocidad	|     Should	|
+|	RF7	|	Fruta				|     Must	|
+|	RF8	|	Varios tipos de fruta		|     Could	|
+|	RF9	|	Movimiento por toda la pantalla	|     Must	|
+|	RF10	|	Game Over			|     Must	|
+|	RF11	|	Incremento del tamaño		|     Should	|
+|	RF12	|	Constante movimiento		|     Must	|
 
 
 ## 3. Requisitos no funcionales. <a name="RNF"></a>
@@ -90,7 +87,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 Acerca del movimiento de la serpiente tendremos varios requisitos funcionales: 
 
 	RF9. Habrá varios tipos de fruta, no solo una, generándose de manera aleatoria..
-	RF10. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, eljuego termina y se mostrará en la pantalla “Game Over”. 
+	RF10. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, el juego termina y se mostrará en la pantalla “Game Over”. 
 	RF11. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
 	RF12.La serpiente estará en constante movimiento.
 	
