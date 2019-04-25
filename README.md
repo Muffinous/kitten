@@ -51,7 +51,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 
 ## 2. Resumen de requisitos funcionales. <a name="RF"></a>
 | Identificador	| Nombre del requisito			|  Priorización	|
-|---------------|---------------------------------------|---------------|-------------------------|
+|---------------|---------------------------------------|---------------|
 |	RF1	|	Menu				|     Should	|
 |	RF2	|	Inicio automatico		|     Could	|
 |	RF3	|	Control de la dirección		|     Must	|
