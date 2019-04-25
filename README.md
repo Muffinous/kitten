@@ -94,42 +94,36 @@ Acerca del movimiento de la serpiente tendremos varios requisitos funcionales:
 ## 5. Casos de uso. <a name="CasosUso"></a>
 	A continuación, se detallarán distintos casos de uso como: Iniciar el juego, salir del juego o elegir nivel. 
 | Nombre del caso de uso | Iniciar el juego  |
-|---------------------------|------------------------------------------------------------------------------------|
+|---------------------------|---------------------------------------------------------------------------------------|
 | Actor | Usuario  |
 | Descripción.  | El usuario seleccionará la opción de iniciar el juego para poder comenzar a jugar.  |
-| Pre-condicion | El usuario irá al menú principal para elegir el juego para comenzar.  |
-| Post-condicion | El juego iniciará.  |
+| Pre-condición | El usuario irá al menú principal para elegir el juego para comenzar.  |
+| Post-condición | El juego iniciará.  |
 | **Flujo de datos.** | **Información.**  |
 | El usuario arrancará el juego. | El sistema arrancará el juego y mostrará el menú principal.  |
-| El usuario seleccionará la opción "Start". | El sistema correrá el juego. |
+| El usuario seleccionará la opción "Start". | El sistema correrá el juego.  |
 				   
 
 | Nombre del caso de uso | Elegir Dificultad  |
-|--------------------------|-------------------------------------------------------------------------------|
-| Actor           | Usuario: El usuario podrá elegir el nivel a su propia decisión.               |
-| Descripcion:    | Cuando el usuario haga clic en Elegir nivel, el nivel se asignará al usuario. |
-| Pre-Condición   | El usuario elegirá el nivel por menú.                                         |
-| Post-Condición: | El nivel asignará al usuario qué nivel elige el usuario.                      |
-| **Flujo de datos.**                        | **Información.**         			  |
+|--------------------------|---------------------------------------------------------------------------------------|
+| Actor | Usuario  |
+| Descripcion: | Cuando el usuario haga clic en Elegir nivel, el nivel se asignará al usuario.  |
+| Pre-Condición | El usuario elegirá el nivel por menú.  |
+| Post-Condición: | El nivel asignará al usuario qué nivel elige el usuario.  |
+| **Flujo de datos.** | **Información.**  |
 | El jugador pinchará en el botón de *Elegir Nivel* | El sistema mostrará un submenú dónde podrá elegir el nivel de dificultad  |
 | El usuario elige el nivel de dificultad | Por último, el sistema actualiza la dificultad del juego y vuelve al menú principal  |
 
 | Nombre del caso de uso | Salir del Juego  |
-|--------------------------|-------------------------------------------------------------------------------|
+|--------------------------|---------------------------------------------------------------------------------------|
 | Actor | Jugador  |
 | Descripción | Cuando el jugador haga clic en el botón de salida después de hacer clic en el botón de salir, aparecerá un diálogo preguntando si está seguro junto a dos botones para responder si o no; en el caso de que la opción seleccionada sea sí el juego terminará.  |
-| Pre-Condicion | El jugador haga clic en la opción de salida.  |
+| Pre-Condición | El jugador selecciona la opción de salida.  |
 | Post-Condición | El juego se terminará.  |
 | **Flujo de datos.** | **Información.**  |
 | El jugador pulsa el botón de *Exit*. | El sistema mostrará un diálogo de usuario esperando la respuesta del jugador.  |
-| El usuario elige la opción de salir. | El sistema cierra el juego. |
-	
+| El usuario elige la opción de salir. | El sistema cierra el juego.  |
 
-
-| Requisito Funcional | Actor                                                                 |
-|-----------------|-------------------------------------------------------------------------------|
-|	| Sistema |
-|	| Sistema |
 
 
 ## 6.Diagramas de casos de uso. <a name="DiagramasCasosUso"></a>
