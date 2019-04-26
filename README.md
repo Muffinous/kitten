@@ -59,8 +59,8 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 |	RF5	|	Variedad de niveles		|     Won't	|
 |	RF6	|	Incremento de la velocidad	|     Should	|
 |	RF7	|	Fruta				|     Must	|
-|	RF8	|	Varios tipos de fruta		|     Could	|
-|	RF9	|	Movimiento por toda la pantalla	|     Must	|
+|	RF8	|	Variedad de fruta		|     Could	|
+|	RF9	|	Movimiento libre		|     Must	|
 |	RF10	|	Game Over			|     Must	|
 |	RF11	|	Incremento del tamaño		|     Should	|
 |	RF12	|	Constante movimiento		|     Must	|
@@ -75,18 +75,18 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 	
 ## 4. Especificacion de Requisitos Funcionales <a name="EspecificacionRF"></a>
 	
-	RF1. El videojuego tendrá un menú que incluirá distintas opciones, entre las cuales están: el comenzar una partida, seleccionar el nivel de dificultad, las instrucciones y por último, la posibilidad de salir del juego.
-	RF2. Al pulsar la tecla “Enter” en el menú el juego iniciará automáticamente.
+	RF1. El videojuego tendrá un menú que incluirá distintas opciones, entre las cuales están: Comenzar una partida, seleccionar el nivel de dificultad, las instrucciones y por último, la posibilidad de salir del juego.
+	RF2. Al pulsar la tecla “Enter” en el menú, el juego iniciará automáticamente.
 	RF3. El jugador podrá controlar la dirección de la serpiente con las teclas “A”,”S”,”D” y ”W”. De manera intuitiva la tecla A será para la izquierda, la S para abajo, la D para la derecha y por último, la D hacia arriba. (o con las teclas de dirección del teclado)
 	RF4. Existirá la posibilidad de parar el juego y ver el menú al pulsar la tecla “ESC”. La única diferencia al menú principal es que este tendrá la posibilidad de reanudar el juego. y no tendrá la posibilidad de cambiar la dificultad.
 	RF5. El juego contará con varios niveles, los cuales se irán superando al llegar a la puntuación necesaria.
 	RF6. Por cada nivel que supere el jugador, la velocidad de la serpiente incrementará. 
 	RF7. Se generará una fruta en una posición aleatoria del mapa.
-	RF8. Habrá varios tipos de fruta, no solo una, generándose de manera aleatoria.
+	RF8. Habrá varios tipos de fruta, que irán variando de manera aleatoria.
 	
-Acerca del movimiento de la serpiente tendremos varios requisitos funcionales: 
+**Acerca del movimiento de la serpiente tendremos varios requisitos funcionales:** 
 
-	RF9. Habrá varios tipos de fruta, no solo una, generándose de manera aleatoria..
+	RF9. El jugador dispondrá de un espacio libre y limitado para mover la serpiente a su voluntad.
 	RF10. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, el juego termina y se mostrará en la pantalla “Game Over”. 
 	RF11. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
 	RF12.La serpiente estará en constante movimiento.
