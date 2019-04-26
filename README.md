@@ -128,7 +128,7 @@ Acerca del movimiento de la serpiente tendremos varios requisitos funcionales:
 
 ## 6.Diagramas de casos de uso. <a name="DiagramasCasosUso"></a>
 
-![caso de uso (1)](https://user-images.githubusercontent.com/45390300/56460003-319e0b80-639c-11e9-8674-8230c95870a1.png)
+![caso de uso (1)](https://github.com/Muffinous/kitten/blob/master/Casos%20de%20uso.png)
 
 
 Start Game/Choose Level    :<br/>
