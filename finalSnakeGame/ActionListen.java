@@ -158,7 +158,7 @@ public class ActionListen implements ActionListener {
 
     }
 
-    private void exitbutton() {  //create an action listen that calling the difficultybutton and including all radio button
+    private void exitbutton() {  //method that calling exit button
         
         int option = JOptionPane.showConfirmDialog(null, "Are you sure you want to quit?", "EXIT",
                 JOptionPane.YES_NO_OPTION);
