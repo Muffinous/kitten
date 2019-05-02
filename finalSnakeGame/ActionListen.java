@@ -133,7 +133,6 @@ public class ActionListen implements ActionListener {
             public void actionPerformed(ActionEvent e) {
                 if (easy.isSelected()) {
                     Menu.DELAY = 150;
-                    System.out.println("Easy");
                 } else if (medium.isSelected()) {
                     Menu.DELAY = 100;
                 } else if (god.isSelected()) {
