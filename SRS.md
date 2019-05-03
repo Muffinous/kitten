@@ -54,14 +54,12 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 |---------------|---------------------------------------|---------------|
 |	RF1	|	Menú				|     Should	|
 |	RF2	|	Control de la dirección		|     Must	|
-|	RF3	|	Posibilidad de parar el juego	|     Could	|
-|	RF4	|	Variedad de niveles		|     Won't	|
-|	RF5	|	Incremento de la velocidad	|     Should	|
-|	RF6	|	Fruta				|     Must	|
-|	RF7	|	Movimiento libre		|     Must	|
-|	RF8	|	Game Over			|     Must	|
-|	RF9	|	Incremento del tamaño		|     Should	|
-|	RF10	|	Constante movimiento		|     Must	|
+|	RF3	|	Variedad de nivel de dificultad	|     Won't	|
+|	RF4	|	Fruta				|     Must	|
+|	RF5	|	Movimiento libre		|     Must	|
+|	RF6	|	Game Over			|     Must	|
+|	RF7	|	Incremento del tamaño		|     Should	|
+|	RF8	|	Constante movimiento		|     Must	|
 
 
 ## 3. Requisitos no funcionales. <a name="RNF"></a>
@@ -72,20 +70,18 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 	4. El fondo del menú será la imagen de una serpiente.
 	
 ## 4. Especificacion de Requisitos Funcionales <a name="EspecificacionRF"></a>
-	
+
 	RF1. El videojuego tendrá un menú que incluirá distintas opciones, entre las cuales están: Comenzar una partida, seleccionar el nivel de dificultad, las instrucciones y por último, la posibilidad de salir del juego.
-	RF2. El jugador podrá controlar la dirección de la serpiente con las teclas “A”,”S”,”D” y ”W”. De manera intuitiva la tecla A será para la izquierda, la S para abajo, la D para la derecha y por último, la D hacia arriba. (o con las teclas de dirección del teclado)
-	RF3. Existirá la posibilidad de parar el juego y ver el menú al pulsar la tecla “ESC”. La única diferencia al menú principal es que este tendrá la posibilidad de reanudar el juego. y no tendrá la posibilidad de cambiar la dificultad.
-	RF4. El juego contará con varios niveles, los cuales se irán superando al llegar a la puntuación necesaria.
-	RF5. Por cada nivel que supere el jugador, la velocidad de la serpiente incrementará. 
-	RF6. Se generará una fruta en una posición aleatoria del mapa.
+	RF2. El jugador podrá controlar la dirección de la serpiente con las teclas “A”,”S”,”D” y ”W”. De manera intuitiva la tecla A será para la izquierda, la S para abajo, la D para la derecha y por último, la W hacia arriba. (o con las teclas de dirección del teclado).
+	RF3. El juego contará con tres niveles de dificultad: easy, medium y god  
+	RF4. Se generará una fruta en una posición aleatoria del mapa.
 	
 **Acerca del movimiento de la serpiente tendremos varios requisitos funcionales:** 
 
-	RF7. El jugador dispondrá de un espacio libre y limitado para mover la serpiente a su voluntad.
-	RF8. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, el juego termina y se mostrará en la pantalla “Game Over”. 
-	RF9. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
-	RF10.La serpiente estará en un campo electromagnético que provocará a sus receptores una tensión constante de amenaza y tendrá que desplazándose continuamente.
+	RF5. El jugador dispondrá de un espacio libre y limitado para mover la serpiente a su voluntad.
+	RF6. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, el juego termina (game over) e inmediatamente se regresará al menú principal. 
+	RF7. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
+	RF8.La serpiente estará en un campo electromagnético que provocará a sus receptores una tensión constante de amenaza y tendrá que desplazándose continuamente.
 	
 ## 5. Casos de uso. <a name="CasosUso"></a>
 	A continuación, se detallarán distintos casos de uso como: Elegir dificultad, Iniciar o salir del juego. 
@@ -135,11 +131,11 @@ INSTRUCTIONS/EXIT :<br/>
 ![INSTRUCTION](https://user-images.githubusercontent.com/45390300/56459887-83459680-639a-11e9-93a8-133d71cdb6b5.png)
 ![EXIT](https://user-images.githubusercontent.com/45390300/56459949-76757280-639b-11e9-9610-6b0491f1f9b2.png)
 
+# 3. Modelo vista-controlador. <a name="MVC"></a>
 
 UML:<br/>
 ![change (1)](https://github.com/Muffinous/kitten/blob/master/diagrama.png)
 
-# 3. Modelo vista-controlador. <a name="MVC"></a>
 # 4. Arquitectura del sistema. <a name="AS"></a>
 ## 1. Componentes del juego. <a name= "CJ"></a>
 ## 2. Arquitectura del juego. <a name= "AJ"></a>
