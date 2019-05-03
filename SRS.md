@@ -153,6 +153,7 @@ El proyecto está dividido en tres paquetes:
 	Snakegame: Contiene todo el código necesario para llevar a cabo el juego.
 	
 		class apple: Contiene la información necesaria para la manzana y el método para crear una nueva en una posición random del tablero.
+		
 		class board: Contiene la información del tablero y toda la parte GUI para el mismo.
 		
 		Si el jugador presiona start, el menú llamará al board. Además, contiene los métodos para ver si la serpiente colisiona, come la manzana y el score del jugador.
