@@ -92,7 +92,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 | Nombre del caso de uso | Elegir Dificultad  |
 |--------------------------|---------------------------------------------------------------------------------------|
 | Actor | Usuario  |
-| Descripcion: | Cuando el usuario haga clic en Elegir nivel, el nivel se asignará al usuario.  |
+| Descripción: | Cuando el usuario haga clic en Elegir nivel, el nivel se asignará al usuario.  |
 | Pre-Condición | El usuario elegirá el nivel por menú.  |
 | Post-Condición: | El nivel asignará al usuario qué nivel elige el usuario.  |
 | **Flujo de datos.** | **Información.**  |
