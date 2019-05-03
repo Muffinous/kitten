@@ -141,7 +141,7 @@ INSTRUCTIONS/EXIT :<br/>
 
 
 UML:<br/>
-![change (1)](https://user-images.githubusercontent.com/45390300/56377803-86f6e300-620b-11e9-9e76-d98071f4bb14.jpg)
+![change (1)](https://github.com/Muffinous/kitten/blob/master/diagrama.png)
 
 # 3. Modelo vista-controlador. <a name="MVC"></a>
 # 4. Arquitectura del sistema. <a name="AS"></a>
