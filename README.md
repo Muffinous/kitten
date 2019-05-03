@@ -3,7 +3,7 @@ El trabajo realizado ha sido para la asignatura de **Metodología de la Programa
 
 
 Se trata del videojuego Snake. Para acceder al SRS se puede pulsar [aquí](https://github.com/Muffinous/kitten/blob/master/SRS.md) o bien,
-arriba seleccionando el archivo SRS.md
+seleccionando arriba  el archivo SRS.md
 
 |Nombre de los integrantes     |
 |------------------------------|
