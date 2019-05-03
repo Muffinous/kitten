@@ -40,10 +40,10 @@ El trabajo principal es escribir un juego de serpiente usando la programación d
 
 # 2. Descripción del diseño. <a name="Diseño"></a> 
 
-## 1. Tecnología y entorno de desarrollo. <a name="EntornoDesarrollo"></a>
+## 2.1 Tecnología y entorno de desarrollo. <a name="EntornoDesarrollo"></a>
 El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando el lenguaje de programación orientado a objetos Java, haciendo uso de clases y objetos.
 
-## 2. Resumen de requisitos funcionales. <a name="RF"></a>
+## 2.2 Resumen de requisitos funcionales. <a name="RF"></a>
 | Identificador	| Nombre del requisito			|  Priorización	|
 |---------------|---------------------------------------|---------------|
 |	RF1	|	Menú				|     Should	|
@@ -56,14 +56,14 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 |	RF8	|	Constante movimiento		|     Must	|
 
 
-## 3. Requisitos no funcionales. <a name="RNF"></a>
+## 2.3 Requisitos no funcionales. <a name="RNF"></a>
 
 	1. El personaje del videojuego será una serpiente encerrada en un laboratorio del área 51 dónde se estudiará su comportamiento instintivo de un depredador a la hora de buscar alimentos.
 	2. Este sistema debería proporcionar la capacidad de operar en un compilador de java junto con la seguridad.
 	3. La interfaz tendrá que ser intuitiva de cara al usuario medio, además de un código purificado para obtener respuestas rápidas.
 	4. El fondo del menú será la imagen de una serpiente.
 	
-## 4. Especificacion de Requisitos Funcionales <a name="EspecificacionRF"></a>
+## 2.4 Especificacion de Requisitos Funcionales <a name="EspecificacionRF"></a>
 
 	RF1. El videojuego tendrá un menú que incluirá distintas opciones, entre las cuales están: Comenzar una partida, seleccionar el nivel de dificultad, las instrucciones y por último, la posibilidad de salir del juego.
 	RF2. El jugador podrá controlar la dirección de la serpiente con las teclas “A”,”S”,”D” y ”W”. De manera intuitiva la tecla A será para la izquierda, la S para abajo, la D para la derecha y por último, la W hacia arriba. (o con las teclas de dirección del teclado).
@@ -77,7 +77,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 	RF7. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
 	RF8.La serpiente estará en un campo electromagnético que provocará a sus receptores una tensión constante de amenaza y tendrá que desplazándose continuamente.
 	
-## 5. Casos de uso. <a name="CasosUso"></a>
+## 2.5 Casos de uso. <a name="CasosUso"></a>
 	A continuación, se detallarán distintos casos de uso como: Elegir dificultad, Iniciar o salir del juego. 
 | Nombre del caso de uso | Iniciar el juego  |
 |---------------------------|---------------------------------------------------------------------------------------|
@@ -112,7 +112,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 
 
 
-## 6.Diagramas de casos de uso. <a name="DiagramasCasosUso"></a>
+## 2.6 Diagramas de casos de uso. <a name="DiagramasCasosUso"></a>
 
 ![caso de uso (1)](https://github.com/Muffinous/kitten/blob/master/Casos%20de%20uso.png)
 
