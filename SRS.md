@@ -59,11 +59,10 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 |	RF5	|	Variedad de niveles		|     Won't	|
 |	RF6	|	Incremento de la velocidad	|     Should	|
 |	RF7	|	Fruta				|     Must	|
-|	RF8	|	Variedad de fruta		|     Could	|
-|	RF9	|	Movimiento libre		|     Must	|
-|	RF10	|	Game Over			|     Must	|
-|	RF11	|	Incremento del tamaño		|     Should	|
-|	RF12	|	Constante movimiento		|     Must	|
+|	RF8	|	Movimiento libre		|     Must	|
+|	RF9	|	Game Over			|     Must	|
+|	RF10	|	Incremento del tamaño		|     Should	|
+|	RF11	|	Constante movimiento		|     Must	|
 
 
 ## 3. Requisitos no funcionales. <a name="RNF"></a>
@@ -82,14 +81,13 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 	RF5. El juego contará con varios niveles, los cuales se irán superando al llegar a la puntuación necesaria.
 	RF6. Por cada nivel que supere el jugador, la velocidad de la serpiente incrementará. 
 	RF7. Se generará una fruta en una posición aleatoria del mapa.
-	RF8. Habrá varios tipos de fruta, que irán variando de manera aleatoria.
 	
 **Acerca del movimiento de la serpiente tendremos varios requisitos funcionales:** 
 
-	RF9. El jugador dispondrá de un espacio libre y limitado para mover la serpiente a su voluntad.
-	RF10. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, el juego termina y se mostrará en la pantalla “Game Over”. 
-	RF11. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
-	RF12.La serpiente estará en constante movimiento.
+	RF8. El jugador dispondrá de un espacio libre y limitado para mover la serpiente a su voluntad.
+	RF9. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, el juego termina y se mostrará en la pantalla “Game Over”. 
+	RF10. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
+	RF11.La serpiente estará en constante movimiento.
 	
 ## 5. Casos de uso. <a name="CasosUso"></a>
 	A continuación, se detallarán distintos casos de uso como: Iniciar el juego, salir del juego o elegir nivel. 
