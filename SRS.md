@@ -31,7 +31,9 @@ El jugador será una serpiente cuyo objetivo es sobrevivir comiendo manzanas sin
 ## 1.2. Información <a name="Información"></a>
 
 La serpiente estará compuesta por cabeza, cuerpo y cola; A medida que vaya devorando las manzanas, el cuerpo crecerá y el jugador ganará 120 puntos. Para llevar esto a cabo, tendremos que saber cuando ha comido una fruta.
+
 La manera de saber esto consiste en que en el momento que la cabeza esté en la misma posición (x,y) que la fruta, consideraremos que la serpiente consumió la fruta. En este instante, la fruta desaparecerá, la serpiente crecerá y aparecerá una nueva fruta en una posición aleatoria del mapa.
+
 Por último, el usuario podrá controlar la dirección de la serpiente a su voluntad(o a la de los investigadores) hasta que cometa un error o decida dejar de ser útil para la ciencia.
 
 ## 1.3. Scope of Project.<a name="ScopeOfProject"></a>
