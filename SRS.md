@@ -32,8 +32,8 @@ El jugador será una serpiente cuyo objetivo es sobrevivir comiendo manzanas sin
 
 ## 1.2. Información <a name="Información"></a>
 
-La serpiente estará compuesta por la cabeza y el cuerpo; en el momento que la serpiente se encuentre con una fruta y la “coma", esta crecerá y el jugador ganará 120 puntos. Para llevar esto a cabo tendremos que saber cuándo la serpiente ha comido una fruta.
-La manera de saber esto consiste en que en el momento que la cabeza esté en la misma posición (x,y) que la fruta, consideraremos que la serpiente la ha comido. En este instante, la fruta desaparecerá, la serpiente crecerá y aparecerá una nueva fruta en una posición aleatoria del mapa.
+La serpiente estará compuesta por la cabeza y el cuerpo; en el momento que la serpiente se encuentre con una fruta y la “coma", esta crecerá y el jugador ganará 120 puntos. Para llevar esto a cabo, tendremos que saber cuando ha comido una fruta.
+La manera de saber esto consiste en que en el momento que la cabeza esté en la misma posición (x,y) que la fruta, consideraremos que la serpiente consumió la fruta. En este instante, la fruta desaparecerá, la serpiente crecerá y aparecerá una nueva fruta en una posición aleatoria del mapa.
 Además, el movimiento de la serpiente se basa en lo que el usuario decide, es decir, la serpiente se moverá en una dirección dada y cada dirección nueva hará que la cabeza gire seguida del cuerpo.
 
 ## 1.3. Scope of Project.<a name="ScopeOfProject"></a>
@@ -53,16 +53,15 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 | Identificador	| Nombre del requisito			|  Priorización	|
 |---------------|---------------------------------------|---------------|
 |	RF1	|	Menú				|     Should	|
-|	RF2	|	Inicio automático		|     Could	|
-|	RF3	|	Control de la dirección		|     Must	|
-|	RF4	|	Posibilidad de parar el juego	|     Could	|
-|	RF5	|	Variedad de niveles		|     Won't	|
-|	RF6	|	Incremento de la velocidad	|     Should	|
-|	RF7	|	Fruta				|     Must	|
-|	RF8	|	Movimiento libre		|     Must	|
-|	RF9	|	Game Over			|     Must	|
-|	RF10	|	Incremento del tamaño		|     Should	|
-|	RF11	|	Constante movimiento		|     Must	|
+|	RF2	|	Control de la dirección		|     Must	|
+|	RF3	|	Posibilidad de parar el juego	|     Could	|
+|	RF4	|	Variedad de niveles		|     Won't	|
+|	RF5	|	Incremento de la velocidad	|     Should	|
+|	RF6	|	Fruta				|     Must	|
+|	RF7	|	Movimiento libre		|     Must	|
+|	RF8	|	Game Over			|     Must	|
+|	RF9	|	Incremento del tamaño		|     Should	|
+|	RF10	|	Constante movimiento		|     Must	|
 
 
 ## 3. Requisitos no funcionales. <a name="RNF"></a>
@@ -89,7 +88,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 	RF10.La serpiente estará en un campo electromagnético que provocará a sus receptores una tensión constante de amenaza y tendrá que desplazándose continuamente.
 	
 ## 5. Casos de uso. <a name="CasosUso"></a>
-	A continuación, se detallarán distintos casos de uso como: Iniciar el juego, salir del juego o elegir nivel. 
+	A continuación, se detallarán distintos casos de uso como: Elegir dificultad, Iniciar o salir del juego. 
 | Nombre del caso de uso | Iniciar el juego  |
 |---------------------------|---------------------------------------------------------------------------------------|
 | Actor | Usuario  |
