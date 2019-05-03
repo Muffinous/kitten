@@ -114,7 +114,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 
 ## 2.6 Diagramas de casos de uso. <a name="DiagramasCasosUso"></a>
 
-![caso de uso (1)](https://github.com/Muffinous/kitten/blob/master/Casos%20de%20uso.png)
+![caso de uso (1)](https://github.com/Muffinous/kitten/blob/master/Diagrams/Casos%20de%20uso.png)
 
 
 Start Game/Choose Level    :<br/>
@@ -128,7 +128,7 @@ INSTRUCTIONS/EXIT :<br/>
 # 3. Modelo vista-controlador. <a name="MVC"></a>
 
 MVC:<br/>
-![change (1)](https://github.com/Muffinous/kitten/blob/master/DiagramaDeClase.png)
+![change (1)](https://github.com/Muffinous/kitten/blob/master/Diagrams/DiagramaDeClase.png)
 
 # 4. Arquitectura del sistema. <a name="AS"></a>
 Para explicar la arquitectura del sistema, a continuación, se detallarán los componentes del juego.
