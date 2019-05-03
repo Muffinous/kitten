@@ -118,12 +118,12 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 
 
 Start Game/Choose Level    :<br/>
-![START (2)](https://user-images.githubusercontent.com/45390300/56459772-e1717a00-6398-11e9-8fe5-4d2b070c8c82.png) 
-![CHOOSE](https://user-images.githubusercontent.com/45390300/56459801-462cd480-6399-11e9-87de-263651f54aec.png)
+![START](https://github.com/Muffinous/kitten/blob/master/Diagrams/Start.png) 
+![CHOOSE](https://github.com/Muffinous/kitten/blob/master/Diagrams/Dificultad.png)
 
 INSTRUCTIONS/EXIT :<br/>
-![INSTRUCTION](https://user-images.githubusercontent.com/45390300/56459887-83459680-639a-11e9-93a8-133d71cdb6b5.png)
-![EXIT](https://user-images.githubusercontent.com/45390300/56459949-76757280-639b-11e9-9610-6b0491f1f9b2.png)
+![INSTRUCTION](https://github.com/Muffinous/kitten/blob/master/Diagrams/Instrucciones.png)
+![EXIT](https://github.com/Muffinous/kitten/blob/master/Diagrams/Exit.png)
 
 # 3. Modelo vista-controlador. <a name="MVC"></a>
 
