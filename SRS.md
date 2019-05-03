@@ -30,9 +30,9 @@ El jugador será una serpiente cuyo objetivo es sobrevivir comiendo manzanas sin
 
 ## 1.2. Información <a name="Información"></a>
 
-La serpiente estará compuesta por la cabeza y el cuerpo; en el momento que la serpiente se encuentre con una fruta y la “coma", esta crecerá y el jugador ganará 120 puntos. Para llevar esto a cabo, tendremos que saber cuando ha comido una fruta.
+La serpiente estará compuesta por cabeza, cuerpo y cola; A medida que vaya devorando las manzanas, el cuerpo crecerá y el jugador ganará 120 puntos. Para llevar esto a cabo, tendremos que saber cuando ha comido una fruta.
 La manera de saber esto consiste en que en el momento que la cabeza esté en la misma posición (x,y) que la fruta, consideraremos que la serpiente consumió la fruta. En este instante, la fruta desaparecerá, la serpiente crecerá y aparecerá una nueva fruta en una posición aleatoria del mapa.
-Además, el movimiento de la serpiente se basa en lo que el usuario decide, es decir, la serpiente se moverá en una dirección dada y cada dirección nueva hará que la cabeza gire seguida del cuerpo.
+Por último, el usuario podrá controlar la dirección de la serpiente a su voluntad(o a la de los investigadores) hasta que cometa un error o decida dejar de ser útil para la ciencia.
 
 ## 1.3. Scope of Project.<a name="ScopeOfProject"></a>
 
@@ -44,10 +44,10 @@ El trabajo principal es escribir un juego de serpiente usando la programación d
 
 # 2. Descripción del diseño. <a name="Diseño"></a> 
 
-## 2.1. Tecnología y entorno de desarrollo. <a name="EntornoDesarrollo"></a>
+## 1. Tecnología y entorno de desarrollo. <a name="EntornoDesarrollo"></a>
 El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando el lenguaje de programación orientado a objetos Java, haciendo uso de clases y objetos.
 
-## 2.2 Resumen de requisitos funcionales. <a name="RF"></a>
+## 2. Resumen de requisitos funcionales. <a name="RF"></a>
 | Identificador	| Nombre del requisito			|  Priorización	|
 |---------------|---------------------------------------|---------------|
 |	RF1	|	Menú				|     Should	|
@@ -60,28 +60,28 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 |	RF8	|	Constante movimiento		|     Must	|
 
 
-## 2.3 Requisitos no funcionales. <a name="RNF"></a>
+## 3. Requisitos no funcionales. <a name="RNF"></a>
 
 	1. El personaje del videojuego será una serpiente encerrada en un laboratorio del área 51 dónde se estudiará su comportamiento instintivo de un depredador a la hora de buscar alimentos.
 	2. Este sistema debería proporcionar la capacidad de operar en un compilador de java junto con la seguridad.
-	3. La interfaz tendrá que ser intuitiva de cara al usuario medio, además de un código purificado para obtener respuestas rápidas.
+	3. La interfaz tendrá que ser intuitiva de cara al usuario medio, además de un código pulido para obtener respuestas rápidas.
 	4. El fondo del menú será la imagen de una serpiente.
 	
-## 2.4 Especificacion de Requisitos Funcionales <a name="EspecificacionRF"></a>
+## 4. Especificacion de Requisitos Funcionales <a name="EspecificacionRF"></a>
 
 	RF1. El videojuego tendrá un menú que incluirá distintas opciones, entre las cuales están: Comenzar una partida, seleccionar el nivel de dificultad, las instrucciones y por último, la posibilidad de salir del juego.
-	RF2. El jugador podrá controlar la dirección de la serpiente con las teclas “A”,”S”,”D” y ”W”. De manera intuitiva la tecla A será para la izquierda, la S para abajo, la D para la derecha y por último, la W hacia arriba. (o con las teclas de dirección del teclado).
-	RF3. El juego contará con tres niveles de dificultad: easy, medium y god  
+	RF2. El jugador podrá controlar la dirección de la serpiente con las teclas “A”,”S”,”D” y ”W”. De manera intuitiva, la tecla A será para la izquierda, la S para abajo, la D para la derecha y por último, la W hacia arriba. (o con las teclas de dirección del teclado).
+	RF3. El juego contará con tres niveles de dificultad: easy, medium y god.
 	RF4. Se generará una fruta en una posición aleatoria del mapa.
 	
 **Acerca del movimiento de la serpiente tendremos varios requisitos funcionales:** 
 
-	RF5. El jugador dispondrá de un espacio libre y limitado para mover la serpiente a su voluntad.
-	RF6. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, el juego termina (game over) e inmediatamente se regresará al menú principal. 
+	RF5. El jugador dispondrá de un espacio libre, pero limitado para mover la serpiente a su voluntad.
+	RF6. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, el juego termina e inmediatamente se regresará al menú principal. 
 	RF7. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
-	RF8.La serpiente estará en un campo electromagnético que provocará a sus receptores una tensión constante de amenaza y tendrá que desplazándose continuamente.
+	RF8. La serpiente estará en un campo electromagnético que provocará a sus receptores una tensión constante de amenaza y tendrá que desplazándose continuamente.
 	
-## 2.5 Casos de uso. <a name="CasosUso"></a>
+## 5. Casos de uso. <a name="CasosUso"></a>
 	A continuación, se detallarán distintos casos de uso como: Elegir dificultad, Iniciar o salir del juego. 
 | Nombre del caso de uso | Iniciar el juego  |
 |---------------------------|---------------------------------------------------------------------------------------|
@@ -116,7 +116,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 
 
 
-## 2.6 Diagramas de casos de uso. <a name="DiagramasCasosUso"></a>
+## 6.Diagramas de casos de uso. <a name="DiagramasCasosUso"></a>
 
 ![caso de uso (1)](https://github.com/Muffinous/kitten/blob/master/Casos%20de%20uso.png)
 
@@ -131,21 +131,10 @@ INSTRUCTIONS/EXIT :<br/>
 
 # 3. Modelo vista-controlador. <a name="MVC"></a>
 
-MVC:<br/>
-![change (1)](https://github.com/Muffinous/kitten/blob/master/diagrama.png)
+UML:<br/>
+![change (1)](https://github.com/Muffinous/kitten/blob/master/DiagramaDeClase.png)
 
 # 4. Arquitectura del sistema. <a name="AS"></a>
-Para explicar la arquitectura del sistema, a continuación, se detallarán los componentes del juego.
 ## 1. Componentes del juego. <a name= "CJ"></a>
-El proyecto está dividido en tres paquetes: 
-	**Menu**: Contiene tres clases, las cuales interactúan entre sí para mostrar el menu principal con las opciones explicadas anteriormente. 
-		**class App**: Es el Main, el cual crea un objeto de la vista Menu.
-		**class Menu**: Extiende de JFrame y se encarga de dibujar los botones disponibles (start, instructions, difficulty and exit). A su vez, implementa un Action Listener (clase ActionListen).
-		**class ActionListen**: Es una clase ActionListener, la cual se encarga de conectar el juego con el menu si el jugador selecciona la opción "start" y por lo tanto, saber qué boton ha pulsado el jugador en el menú y realizar las acciones correspondientes.
-	**Images**: Aquí se guardan las imagenes necesarias para el juego; por ejemplo: el fondo del menú, gifs..
-	**Snakegame**: Contiene todo el código necesario para llevar a cabo el juego.
-		**class apple**: Contiene la información necesaria para la manzana y el método para crear una nueva en una posición random del tablero.
-		**class board**: Contiene la información del tablero y toda la parte GUI para el mismo. Si el jugador presiona start, el menú llamará al board. Además, contiene los métodos para ver si la serpiente colisiona, come la manzana y el score del jugador.
-		**class snake**: Contiene la información necesaria para la serpiente.
-		
+## 2. Arquitectura del juego. <a name= "AJ"></a>
 # 5. Referencias. <a name= "Referencias"></a>
