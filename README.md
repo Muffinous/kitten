@@ -1,4 +1,4 @@
-# SNAKEY SNAKEY
+# ![re](https://user-images.githubusercontent.com/45390300/56307681-b93e0d00-6145-11e9-9af5-3b559c8ca493.gif) # SNAKEY SNAKEY
 El trabajo realizado ha sido para la asignatura de **Metodología de la Programación**.
 
 
