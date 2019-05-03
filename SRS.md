@@ -22,12 +22,10 @@ Tabla de contenidos
 - [5. Referencias.](#Referencias)
 
 # 1. Introducción.<a name="Introducción"></a>
-
-La documentación de este proyecto incluye cómo usar el proyecto y lo necesario para entender el desarrollo del mismo.
+Este documento constará de las especificaciones de los requerimentos de software y los procedimientos necesarios a seguir para desarrollar el famoso videojuego retro Snake (de un solo jugador).
 
 ## 1.1 Objetivo.<a name="Objetivo"></a>
-
-Este documento constará de la información y los procedimientos necesarios a seguir para desarrollar el famoso videojuego retro Snake (de un solo jugador).
+El objetivo de este documento es recopilar toda la información necesaria para comprender el programa.
 El jugador será una serpiente cuyo objetivo es sobrevivir comiendo manzanas sin chocarse con las paredes o comerse su propia cola, ya que esto provocará que muera y por lo tanto, se reinicie el juego. 
 
 ## 1.2. Información <a name="Información"></a>
