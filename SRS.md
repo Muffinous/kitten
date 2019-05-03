@@ -139,31 +139,23 @@ Para explicar la arquitectura del sistema, a continuación, se detallarán los c
 ## 1. Componentes del juego. <a name= "CJ"></a>
 El proyecto está dividido en tres paquetes: 
 	
+	Menu: Contiene tres clases, las cuales interactúan entre sí para mostrar el menu principal con las opciones explicadas anteriormente. 
+		class App: Es el Main, el cual crea un objeto de la vista Menu.		
+		
+		class Menu: Extiende de JFrame y se encarga de dibujar los botones disponibles (start, instructions, difficulty and 			exit). A su vez, implementa un Action Listener (clase ActionListen).
+			
+		class ActionListen: Es una clase ActionListener, la cual se encarga de conectar el juego con el menu si el jugador 			selecciona la opción "start" y por lo tanto, saber qué boton ha pulsado el jugador en el menú y realizar las acciones 			correspondientes.
 	
-	**Menu**: Contiene tres clases, las cuales interactúan entre sí para mostrar el menu principal con las opciones explicadas anteriormente. 
+	Images: Aquí se guardan las imagenes necesarias para el juego; por ejemplo: el fondo del menú, gifs..	
 	
+	Snakegame: Contiene todo el código necesario para llevar a cabo el juego.
 	
-		**class App**: Es el Main, el cual crea un objeto de la vista Menu.
+		class apple: Contiene la información necesaria para la manzana y el método para crear una nueva en una posición random 			del tablero.
 		
 		
-		**class Menu**: Extiende de JFrame y se encarga de dibujar los botones disponibles (start, instructions, difficulty and exit). A su vez, implementa un Action Listener (clase ActionListen).
+		class board: Contiene la información del tablero y toda la parte GUI para el mismo. Si el jugador presiona start, el 			menú llamará al board. Además, contiene los métodos para ver si la serpiente colisiona, come la manzana y el score del 			jugador.
 		
 		
-		**class ActionListen**: Es una clase ActionListener, la cual se encarga de conectar el juego con el menu si el jugador selecciona la opción "start" y por lo tanto, saber qué boton ha pulsado el jugador en el menú y realizar las acciones correspondientes.
-	
-	
-	**Images**: Aquí se guardan las imagenes necesarias para el juego; por ejemplo: el fondo del menú, gifs..
-	
-	
-	**Snakegame**: Contiene todo el código necesario para llevar a cabo el juego.
-	
-	
-		**class apple**: Contiene la información necesaria para la manzana y el método para crear una nueva en una posición random del tablero.
-		
-		
-		**class board**: Contiene la información del tablero y toda la parte GUI para el mismo. Si el jugador presiona start, el menú llamará al board. Además, contiene los métodos para ver si la serpiente colisiona, come la manzana y el score del jugador.
-		
-		
-		**class snake**: Contiene la información necesaria para la serpiente.
+		class snake: Contiene la información necesaria para la serpiente.
 		
 # 5. Referencias. <a name= "Referencias"></a>
