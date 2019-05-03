@@ -73,7 +73,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 
 	RF5. El jugador dispondrá de un espacio libre, pero limitado para mover la serpiente a su voluntad.
 	RF6. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, el juego termina e inmediatamente se regresará al menú principal. 
-	RF7. Cada vez que la serpiente coma una fruta crecerá e incrementando la posibilidad de que se choque consigo misma.
+	RF7. Cada vez que la serpiente coma una fruta crecerá debido a las mutaciones genéticas inyectadas en el cebo e incrementará la posibilidad de que se choque consigo mísma ya que se sospecha que estas mutaciones afectan gravemente el sistema cerebral.
 	RF8.La serpiente estará en un campo electromagnético que provocará a sus receptores una tensión constante de amenaza y tendrá que estar desplazándose continuamente.
 	
 ## 2.5 Casos de uso. <a name="CasosUso"></a>
@@ -96,8 +96,8 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 | Pre-Condición | El usuario elegirá el nivel por menú.  |
 | Post-Condición: | El nivel asignará al usuario qué nivel elige el usuario.  |
 | **Flujo de datos.** | **Información.**  |
-| El jugador pinchará en el botón de *Elegir Nivel* | El sistema mostrará un submenú dónde podrá elegir el nivel de dificultad  |
-| El usuario elige el nivel de dificultad | Por último, el sistema actualiza la dificultad del juego y vuelve al menú principal  |
+| El jugador pinchará en el botón de *Elegir Nivel* | El sistema mostrará un submenú dónde podrá elegir el nivel de dificultad.  |
+| El usuario elige el nivel de dificultad | Por último, el sistema actualiza la dificultad del juego y vuelve al menú principal.  |
 
 | Nombre del caso de uso | Salir del Juego  |
 |--------------------------|---------------------------------------------------------------------------------------|
