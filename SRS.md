@@ -35,7 +35,7 @@ Por último, el jugador podrá controlar la dirección de la serpiente a su volu
 
 ## 1.3. Scope of Project.<a name="ScopeOfProject"></a>
 
-El trabajo principal consiste en experimentar los pasos para crear un proyecto desde cero en el entorno de java. Crear un SRS que explique todo la proyección de las ideas tanto del usuario como del diseñador. 
+El trabajo principal consiste en experimentar los pasos para crear un proyecto desde cero en el entorno de java y  trabajar con las colecciones gráficas de Java. Crear un SRS que explique todo la proyección de las ideas tanto del usuario como del diseñador.
 
 # 2. Descripción del diseño. <a name="Diseño"></a> 
 
