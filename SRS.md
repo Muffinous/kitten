@@ -12,7 +12,7 @@ Tabla de contenidos
 	- [2.3 Requisitos no funcionales](#RNF)
 	- [2.4 Especificación de Requisitos Funcionales](#EspecificacionRF)
 	- [2.5 Casos de uso](#CasosUso)	
-	- [2.6 Diagramas de los casos de uso](#DiagramasCasosUso)
+	- [2.6 Diagramas de los casos de uso y UML](#DiagramasCasosUso)
 - [3. Modelo vista-controlador.](#MVC)
 - [4. Arquitectura del sistema.](#AS)
 	- [1. Componentes del juego.](#CJ)
@@ -111,7 +111,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 
 
 
-## 2.6 Diagramas de casos de uso. <a name="DiagramasCasosUso"></a>
+## 2.6 Diagramas de casos de uso y UML <a name="DiagramasCasosUso"></a>
 
 ![caso de uso (1)](https://github.com/Muffinous/kitten/blob/master/Diagrams/Casos%20de%20uso.png)
 
@@ -124,10 +124,15 @@ INSTRUCTIONS/EXIT :<br/>
 ![INSTRUCTION](https://github.com/Muffinous/kitten/blob/master/Diagrams/Instrucciones.png)
 ![EXIT](https://github.com/Muffinous/kitten/blob/master/Diagrams/Exit.png)
 
+Diagrama UML: 
+![change (1)](https://github.com/Muffinous/kitten/blob/master/Diagrams/DiagramaDeClase.png)
+
 # 3. Modelo vista-controlador. <a name="MVC"></a>
 
 MVC:<br/>
-![change (1)](https://github.com/Muffinous/kitten/blob/master/Diagrams/DiagramaDeClase.png)
+![MVC (1)](https://github.com/Muffinous/kitten/blob/master/Diagrams/MVC.png)
+
+
 
 # 4. Arquitectura del sistema. <a name="AS"></a>
 Para explicar la arquitectura del sistema, a continuación, se detallarán los componentes del juego.
