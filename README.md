@@ -3,7 +3,9 @@ El trabajo realizado ha sido para la asignatura de **Metodología de la Programa
 
 
 Se trata del videojuego Snake. Para acceder al SRS se puede pulsar [aquí](https://github.com/Muffinous/kitten/blob/master/SRS.md) o bien,
-seleccionando arriba  el archivo SRS.md
+seleccionando arriba  el archivo SRS.md.
+
+Teníamos un problema inoportuno que no ejecutaba bien el jar, pero el código compila y ejecuta perfectamente pudiendo disfrutar del juego.
 
 |Nombre de los integrantes     |
 |------------------------------|
