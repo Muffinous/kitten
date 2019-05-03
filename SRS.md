@@ -7,7 +7,6 @@ Tabla de contenidos
 	- [1.2 Información](#Información)
 	- [1.3 Scope of Project](#ScopeOfProject)
  	- [1.4 Referencias](#Referencias)  
-	- [1.5 Visión general del documento](#VisionGeneral)
 - [2. Descripción del diseño.](#Diseño)
 	- [2.1 Tecnología y entorno de desarrollo](#EntornoDesarrollo)
 	- [2.2 Resumen de requisitos funcionales](#RF)
@@ -18,7 +17,6 @@ Tabla de contenidos
 - [3. Modelo vista-controlador.](#MVC)
 - [4. Arquitectura del sistema.](#AS)
 	- [1. Componentes del juego.](#CJ)
-	- [2. Arquitectura del juego.](#AJ)
 - [5. Referencias.](#Referencias)
 
 # 1. Introducción.<a name="Introducción"></a>
@@ -39,8 +37,6 @@ Además, el movimiento de la serpiente se basa en lo que el usuario decide, es d
 El trabajo principal es escribir un juego de serpiente usando la programación de java. Este juego generará diversos problemas relacionados con las matemáticas. El jugador tiene que responder las preguntas controlando una serpiente con las teclas del teclado para comer la manzana de respuesta. Cada manzana de respuesta correcta que se come prolonga la vida de la serpiente.
 
 ## 1.4. Referencias. <a name="Referencias"></a>
-
-## 1.5. Visión general del documento. <a name="VisionGeneral"></a>
 
 # 2. Descripción del diseño. <a name="Diseño"></a> 
 
