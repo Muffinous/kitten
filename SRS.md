@@ -5,8 +5,7 @@ Tabla de contenidos
 - [1. Introducción](#Introducción)
 	- [1.1 Objetivo](#Objetivo)
 	- [1.2 Información](#Información)
-	- [1.3 Scope of Project](#ScopeOfProject)
- 	- [1.4 Referencias](#Referencias)  
+	- [1.3 Scope of Project](#ScopeOfProject) 
 - [2. Descripción del diseño.](#Diseño)
 	- [2.1 Tecnología y entorno de desarrollo](#EntornoDesarrollo)
 	- [2.2 Resumen de requisitos funcionales](#RF)
@@ -29,14 +28,14 @@ El jugador será una serpiente cuyo objetivo es sobrevivir comiendo manzanas sin
 ## 1.2. Información <a name="Información"></a>
 
 La serpiente estará compuesta por cabeza, cuerpo y cola; A medida que el jugador vaya devorando las manzanas el cuerpo irá creciendo y el jugador ganará 120 puntos. Para llevar esto a cabo, tendremos que saber cuando ha comido una fruta.
+
 La manera de saber esto consiste en que en el momento que la cabeza esté en la misma posición (x,y) que la fruta, consideraremos que la serpiente consumió la fruta. En este instante, la fruta desaparecerá, la serpiente crecerá y aparecerá una nueva fruta en una posición aleatoria del mapa.
+
 Por último, el jugador podrá controlar la dirección de la serpiente a su voluntad mediante por el método WASD, o si prefiere, con las flechas direccionales.
 
 ## 1.3. Scope of Project.<a name="ScopeOfProject"></a>
 
 El trabajo principal consiste en experimentar los pasos para crear un proyecto desde cero en el entorno de java. Crear un SRS que explique todo la proyección de las ideas tanto del usuario como del diseñador. 
-
-## 1.4. Referencias. <a name="Referencias"></a>
 
 # 2. Descripción del diseño. <a name="Diseño"></a> 
 
@@ -157,3 +156,5 @@ El proyecto está dividido en tres paquetes:
 		Class snake: Contiene la información necesaria para la serpiente.
 		
 # 5. Referencias. <a name= "Referencias"></a>
+	Para realizar este proyecto hemos usado el ejemplo de SRS que se colgó en el aula virtual.
+	
