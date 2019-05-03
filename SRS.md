@@ -44,10 +44,10 @@ El trabajo principal es escribir un juego de serpiente usando la programación d
 
 # 2. Descripción del diseño. <a name="Diseño"></a> 
 
-## 1. Tecnología y entorno de desarrollo. <a name="EntornoDesarrollo"></a>
+## 2.1. Tecnología y entorno de desarrollo. <a name="EntornoDesarrollo"></a>
 El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando el lenguaje de programación orientado a objetos Java, haciendo uso de clases y objetos.
 
-## 2. Resumen de requisitos funcionales. <a name="RF"></a>
+## 2.2 Resumen de requisitos funcionales. <a name="RF"></a>
 | Identificador	| Nombre del requisito			|  Priorización	|
 |---------------|---------------------------------------|---------------|
 |	RF1	|	Menú				|     Should	|
@@ -60,14 +60,14 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 |	RF8	|	Constante movimiento		|     Must	|
 
 
-## 3. Requisitos no funcionales. <a name="RNF"></a>
+## 2.3 Requisitos no funcionales. <a name="RNF"></a>
 
 	1. El personaje del videojuego será una serpiente encerrada en un laboratorio del área 51 dónde se estudiará su comportamiento instintivo de un depredador a la hora de buscar alimentos.
 	2. Este sistema debería proporcionar la capacidad de operar en un compilador de java junto con la seguridad.
 	3. La interfaz tendrá que ser intuitiva de cara al usuario medio, además de un código purificado para obtener respuestas rápidas.
 	4. El fondo del menú será la imagen de una serpiente.
 	
-## 4. Especificacion de Requisitos Funcionales <a name="EspecificacionRF"></a>
+## 2.4 Especificacion de Requisitos Funcionales <a name="EspecificacionRF"></a>
 
 	RF1. El videojuego tendrá un menú que incluirá distintas opciones, entre las cuales están: Comenzar una partida, seleccionar el nivel de dificultad, las instrucciones y por último, la posibilidad de salir del juego.
 	RF2. El jugador podrá controlar la dirección de la serpiente con las teclas “A”,”S”,”D” y ”W”. De manera intuitiva la tecla A será para la izquierda, la S para abajo, la D para la derecha y por último, la W hacia arriba. (o con las teclas de dirección del teclado).
@@ -81,7 +81,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 	RF7. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
 	RF8.La serpiente estará en un campo electromagnético que provocará a sus receptores una tensión constante de amenaza y tendrá que desplazándose continuamente.
 	
-## 5. Casos de uso. <a name="CasosUso"></a>
+## 2.5 Casos de uso. <a name="CasosUso"></a>
 	A continuación, se detallarán distintos casos de uso como: Elegir dificultad, Iniciar o salir del juego. 
 | Nombre del caso de uso | Iniciar el juego  |
 |---------------------------|---------------------------------------------------------------------------------------|
@@ -116,7 +116,7 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 
 
 
-## 6.Diagramas de casos de uso. <a name="DiagramasCasosUso"></a>
+## 2.6 Diagramas de casos de uso. <a name="DiagramasCasosUso"></a>
 
 ![caso de uso (1)](https://github.com/Muffinous/kitten/blob/master/Casos%20de%20uso.png)
 
@@ -131,10 +131,21 @@ INSTRUCTIONS/EXIT :<br/>
 
 # 3. Modelo vista-controlador. <a name="MVC"></a>
 
-UML:<br/>
-![change (1)](https://github.com/Muffinous/kitten/blob/master/DiagramaDeClase.png)
+MVC:<br/>
+![change (1)](https://github.com/Muffinous/kitten/blob/master/diagrama.png)
 
 # 4. Arquitectura del sistema. <a name="AS"></a>
+Para explicar la arquitectura del sistema, a continuación, se detallarán los componentes del juego.
 ## 1. Componentes del juego. <a name= "CJ"></a>
-## 2. Arquitectura del juego. <a name= "AJ"></a>
+El proyecto está dividido en tres paquetes: 
+	**Menu**: Contiene tres clases, las cuales interactúan entre sí para mostrar el menu principal con las opciones explicadas anteriormente. 
+		**class App**: Es el Main, el cual crea un objeto de la vista Menu.
+		**class Menu**: Extiende de JFrame y se encarga de dibujar los botones disponibles (start, instructions, difficulty and exit). A su vez, implementa un Action Listener (clase ActionListen).
+		**class ActionListen**: Es una clase ActionListener, la cual se encarga de conectar el juego con el menu si el jugador selecciona la opción "start" y por lo tanto, saber qué boton ha pulsado el jugador en el menú y realizar las acciones correspondientes.
+	**Images**: Aquí se guardan las imagenes necesarias para el juego; por ejemplo: el fondo del menú, gifs..
+	**Snakegame**: Contiene todo el código necesario para llevar a cabo el juego.
+		**class apple**: Contiene la información necesaria para la manzana y el método para crear una nueva en una posición random del tablero.
+		**class board**: Contiene la información del tablero y toda la parte GUI para el mismo. Si el jugador presiona start, el menú llamará al board. Además, contiene los métodos para ver si la serpiente colisiona, come la manzana y el score del jugador.
+		**class snake**: Contiene la información necesaria para la serpiente.
+		
 # 5. Referencias. <a name= "Referencias"></a>
