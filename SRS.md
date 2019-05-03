@@ -67,27 +67,26 @@ El desarrollo del proyecto se ha llevado a cabo en Netbeans IDE 8.2 utilizando e
 
 ## 3. Requisitos no funcionales. <a name="RNF"></a>
 
-	1. El protagonista del videojuego será una serpiente.
+	1. El personaje del videojuego será una serpiente encerrada en un laboratorio del área 51 dónde se estudiará su comportamiento instintivo de un depredador a la hora de buscar alimentos.
 	2. Este sistema debería proporcionar la capacidad de operar en un compilador de java junto con la seguridad.
-	3. La interfaz fácil de usar y la respuesta rápida.
-	4. El fondo del menú será una imagen de una serpiente.
+	3. La interfaz tendrá que ser intuitiva de cara al usuario medio, además de un código purificado para obtener respuestas rápidas.
+	4. El fondo del menú será la imagen de una serpiente.
 	
 ## 4. Especificacion de Requisitos Funcionales <a name="EspecificacionRF"></a>
 	
 	RF1. El videojuego tendrá un menú que incluirá distintas opciones, entre las cuales están: Comenzar una partida, seleccionar el nivel de dificultad, las instrucciones y por último, la posibilidad de salir del juego.
-	RF2. Al pulsar la tecla “Enter” en el menú, el juego iniciará automáticamente.
-	RF3. El jugador podrá controlar la dirección de la serpiente con las teclas “A”,”S”,”D” y ”W”. De manera intuitiva la tecla A será para la izquierda, la S para abajo, la D para la derecha y por último, la D hacia arriba. (o con las teclas de dirección del teclado)
-	RF4. Existirá la posibilidad de parar el juego y ver el menú al pulsar la tecla “ESC”. La única diferencia al menú principal es que este tendrá la posibilidad de reanudar el juego. y no tendrá la posibilidad de cambiar la dificultad.
-	RF5. El juego contará con varios niveles, los cuales se irán superando al llegar a la puntuación necesaria.
-	RF6. Por cada nivel que supere el jugador, la velocidad de la serpiente incrementará. 
-	RF7. Se generará una fruta en una posición aleatoria del mapa.
+	RF2. El jugador podrá controlar la dirección de la serpiente con las teclas “A”,”S”,”D” y ”W”. De manera intuitiva la tecla A será para la izquierda, la S para abajo, la D para la derecha y por último, la D hacia arriba. (o con las teclas de dirección del teclado)
+	RF3. Existirá la posibilidad de parar el juego y ver el menú al pulsar la tecla “ESC”. La única diferencia al menú principal es que este tendrá la posibilidad de reanudar el juego. y no tendrá la posibilidad de cambiar la dificultad.
+	RF4. El juego contará con varios niveles, los cuales se irán superando al llegar a la puntuación necesaria.
+	RF5. Por cada nivel que supere el jugador, la velocidad de la serpiente incrementará. 
+	RF6. Se generará una fruta en una posición aleatoria del mapa.
 	
 **Acerca del movimiento de la serpiente tendremos varios requisitos funcionales:** 
 
-	RF8. El jugador dispondrá de un espacio libre y limitado para mover la serpiente a su voluntad.
-	RF9. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, el juego termina y se mostrará en la pantalla “Game Over”. 
-	RF10. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
-	RF11.La serpiente estará en constante movimiento.
+	RF7. El jugador dispondrá de un espacio libre y limitado para mover la serpiente a su voluntad.
+	RF8. No existen las vidas, por lo que en cuanto la serpiente se choque con un obstáculo o consigo misma, el juego termina y se mostrará en la pantalla “Game Over”. 
+	RF9. Cada vez que la serpiente coma una fruta crecerá haciéndose más larga e incrementando la posibilidad de que se choque consigo misma.
+	RF10.La serpiente estará en un campo electromagnético que provocará a sus receptores una tensión constante de amenaza y tendrá que desplazándose continuamente.
 	
 ## 5. Casos de uso. <a name="CasosUso"></a>
 	A continuación, se detallarán distintos casos de uso como: Iniciar el juego, salir del juego o elegir nivel. 
